@@ -1,0 +1,21 @@
+.container {
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.box {
+  color: white;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #141414;
+  height: 175px;
+  width: 175px;
+  border-radius: 5px;
+  margin: 10px;
+}

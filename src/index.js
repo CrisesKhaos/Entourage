@@ -5,10 +5,11 @@ import App from "./App";
 import Login from "./Components/Pages/Login";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Events from "./Components/Pages/Events";
-import ContactUs from "./Components/Pages/ContactUs";
 import Navbar from "./Components/Navbar/Navbar";
 import Particles from "react-particles-js";
 import ParticleBackround from "./Backround/ParticleBackround";
+import Schedule from "./Components/Pages/Schedule";
+import Nancy from "./Components/Pages/Nancy";
 
 ReactDOM.render(
   <Router>
@@ -20,7 +21,8 @@ ReactDOM.render(
       <Route path="/" exact component={App} />
       <Route path="/events" exact component={Events} />
       <Route path="/signin" exact component={Login} />
-      <Route path="/contact-us" exact component={ContactUs} />
+      <Route path="/schedule" exact component={Schedule} />
+      <Route path="/nancy-home" exact component={Nancy} />
     </Switch>
   </Router>,
 

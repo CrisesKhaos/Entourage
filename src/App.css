@@ -9,5 +9,14 @@
   bottom: 50%;
   transform: translate(50%, 50%);
   color: aliceblue;
-  font-size: 3rem;
+  font-size: 5rem;
+}
+
+.slogan {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+  color: aliceblue;
+  font-size: 2rem;
 }

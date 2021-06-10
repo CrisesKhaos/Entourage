@@ -1,11 +1,14 @@
 .modal {
+  border-radius: 30px;
+  color: white;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #242526;
+  background-color: #121213;
   padding: 50px;
   z-index: 1000;
+  font-size: 2rem;
 }
 
 .modal-overlay {
@@ -16,4 +19,19 @@
   right: 0;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1000;
+}
+.field {
+  margin: 10px;
+  margin-left: 0;
+  font-size: 1.75rem;
+  text-decoration: none;
+  background-color: #242526;
+  color: white;
+  display: block;
+  box-sizing: border-box;
+  padding: 1rem;
+  position: relative;
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: 0px solid transparent;
 }

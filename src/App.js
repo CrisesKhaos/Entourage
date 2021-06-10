@@ -7,7 +7,8 @@ function App(props) {
 
   return (
     <div className="container">
-      <p className="title">Entourage</p>
+      <p className="title">E-ntourage` 21</p>
+      <h className="slogan">Survive to Revive</h>
     </div>
   );
 }
