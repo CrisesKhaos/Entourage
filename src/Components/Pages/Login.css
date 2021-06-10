@@ -1,0 +1,43 @@
+.slide {
+  color: #8fc866;
+  transition: 0.25s;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  font-size: 0.91rem;
+}
+.slide:hover,
+.slide:focus {
+  border-color: #7bd43b;
+  color: #fff;
+  box-shadow: inset 6.5rem 0 0 0 #7bd43b;
+}
+
+.field {
+  margin: 10px;
+  font-size: 1.75rem;
+  text-decoration: none;
+  background-color: #242526;
+  color: white;
+  display: block;
+  box-sizing: border-box;
+  padding: 1rem;
+  position: relative;
+  border-radius: 8px;
+  border: 0px solid transparent;
+}
+
+.tag {
+  position: relative;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  display: flex;
+  justify-content: start;
+}
+
+.wrong {
+  color: #ff7f82;
+}

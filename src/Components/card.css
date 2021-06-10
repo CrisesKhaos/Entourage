@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+.card-container {
+  box-shadow: 0 2px 20px;
+  background: #242526;
+  border-radius: 10;
+  flex-direction: column;
+  display: flex;
+  padding: 1rem;
+  z-index: 1;
+  shape-outside: polygon();
+  align-items: center;
+  min-width: 30vmax;
+}
+
+.btn {
+  margin: 30px;
+  font-size: 1.75rem;
+  text-decoration: none;
+  background-color: #242526;
+  color: white;
+  display: block;
+  box-sizing: border-box;
+  padding: 1rem;
+  position: relative;
+  border-radius: 8px;
+  text-transform: uppercase;
+  border: 0px solid transparent;
+}
+
+.btn::before {
+  background: linear-gradient(
+    70deg,
+    #0ebeff,
+    #ffdd40,
+    #ae63e4,
+    #47cf73,
+    #0ebeff,
+    #ffdd40,
+    #ae63e4,
+    #47cf73
+  );
+  background-size: 200%;
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  top: -4px;
+  left: -4px;
+  border-radius: 8px;
+  animation: myanimation 2s linear infinite;
+  animation-play-state: paused;
+}
+
+.btn:hover::before {
+  transform: scaleY(1.06);
+  transition-duration: 200ms;
+  animation-play-state: running;
+  animation: myanimation 1.5s linear infinite;
+}
+
+@keyframes myanimation {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+.ques {
+  font-size: 3rem;
+  color: white;
+}
+.complete-btn {
+  background: #ff6f47;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.complete-btn {
+  background: #242526;
+}
+.complete-btn:hover {
+  transform: scale(1.06);
+  color: #0ebeff;
+  background-color: #000000;
+  transition-duration: 200ms;
+  animation-play-state: running;
+  animation: myanimation 1.5s linear infinite;
+}
+
+/*hover color :  3a3b3c*/
