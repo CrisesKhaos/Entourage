@@ -12,7 +12,7 @@ function Popup(props) {
   const submitHandler = (e) => {
     console.log("asdf");
     console.log(code.toUpperCase());
-    if (code.toUpperCase() === "ASDF") {
+    if (code.toUpperCase() === "ASDF" || code.toUpperCase() === "ZXCV") {
       props.onClick(false);
       props.redirect(true);
       seterror("");

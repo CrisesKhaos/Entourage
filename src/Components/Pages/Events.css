@@ -9,7 +9,7 @@
 
 .nancyDrew {
   flex-direction: column;
-  text-align: left;
+  text-align: justify;
   border-radius: 10px;
   display: flex;
   width: 35vw;
@@ -24,6 +24,8 @@
 }
 
 .fundamentals {
+  text-align: justify;
+  flex-direction: column;
   border-radius: 10px;
   display: flex;
   width: 35vw;
