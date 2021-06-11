@@ -42,7 +42,8 @@
 }
 
 .event-title {
-  font-size: 4rem;
+  overflow-wrap: break-word;
+  font-size: 3.5vw;
   color: aliceblue;
 }
 
@@ -74,7 +75,7 @@
 }
 
 .desc {
-  margin: 2rem;
+  margin: 1.8vw;
   font-size: 1.5rem;
   color: aliceblue;
 }
