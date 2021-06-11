@@ -173,7 +173,15 @@ function BoxContent(props) {
   }
 
   return (
-    <div className="card">{<Sort index={props.location.state.index} />}</div>
+    <>
+      <div className="card">{<Sort index={props.location.state.index} />}</div>
+      <button
+        className="slidebck"
+        onClick={() => props.history.replace("/nancy-home")}
+      >
+        Back
+      </button>
+    </>
   );
 }
 

@@ -8,6 +8,8 @@
 }
 
 .nancyDrew {
+  flex-direction: column;
+  text-align: left;
   border-radius: 10px;
   display: flex;
   width: 35vw;
@@ -42,7 +44,6 @@
 .event-title {
   font-size: 4rem;
   color: aliceblue;
-  align-items: center;
 }
 
 .fundamentals:hover .event-title,
@@ -70,4 +71,10 @@
   border-color: #ee8b44;
   box-shadow: 0 0.5em 0.5em -0.4em #ee8b44;
   transform: translateY(-0.25em);
+}
+
+.desc {
+  margin: 2rem;
+  font-size: 1.5rem;
+  color: aliceblue;
 }

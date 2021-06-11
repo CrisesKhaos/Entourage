@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 
 function Popup(props) {
   const [code, setcode] = useState("");
+  const [error, seterror] = useState("");
   const changeHandler = (e) => {
     setcode(e.target.value);
   };
@@ -14,6 +15,9 @@ function Popup(props) {
     if (code.toUpperCase() === "ASDF") {
       props.onClick(false);
       props.redirect(true);
+      seterror("");
+    } else {
+      seterror("Please enter a valid code.");
     }
   };
 
@@ -21,10 +25,17 @@ function Popup(props) {
   else
     return ReactDOM.createPortal(
       <>
-        <div className="modal-overlay" onClick={() => props.onClick(false)} />
+        <div
+          className="modal-overlay"
+          onClick={() => {
+            seterror("");
+            props.onClick(false);
+          }}
+        />
         <div className="modal">
           Enter your code
           <input type="text" className="field" onChange={changeHandler}></input>
+          <div className="wrong">{error}</div>
           <button className="slide" onClick={submitHandler}>
             Submit
           </button>

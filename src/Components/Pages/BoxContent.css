@@ -20,3 +20,24 @@
 .img-box-alt {
   width: 54vw;
 }
+
+.slidebck {
+  position: fixed;
+  bottom: 0;
+  left: 20;
+  color: #ffa260;
+  transition: 0.25s;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  font-size: 0.91rem;
+}
+.slidebck:hover,
+.slidebck:focus {
+  border-color: #ee8b44;
+  box-shadow: 0 0.5em 0.5em -0.4em #ee8b44;
+  transform: translateY(-0.25em);
+}
