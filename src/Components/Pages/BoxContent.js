@@ -35,6 +35,7 @@ function BoxContent(props) {
       case 0:
         return (
           <p>
+            <h1 className="img-box"> Company Profile and Suspects List</h1>
             <h2> Forensic Accounting.</h2>
             <br />
             Company Overview: Althea &amp; Co, is based in Mumbai, India.
@@ -186,6 +187,7 @@ function BoxContent(props) {
       case 1:
         return (
           <div className="img-container">
+            <h1>Financial Statements of the Company</h1>
             <img className="img-box" src={img1_1} />
             <img src={img1_2} />
           </div>
@@ -193,6 +195,7 @@ function BoxContent(props) {
       case 2:
         return (
           <div className="img-container">
+            <h1>Competitors Statements</h1>
             <img className="img-box" src={img2_1} />
             <img src={img2_2} />
           </div>
@@ -200,18 +203,21 @@ function BoxContent(props) {
       case 3:
         return (
           <div className="img-container">
+            <h1>Purchase List</h1>
             <img className="img-box-alt" src={img3} />
           </div>
         );
       case 4:
         return (
           <div className="img-container">
+            <h1>Email</h1>
             <img className="img-box-alt" src={img4} />
           </div>
         );
       case 5:
         return (
           <div className="img-container">
+            <h1>Voucher</h1>
             <img className="img-box-alt" src={img5_1} />
             <img className="img-box-alt" src={img5_2} />
             <img className="img-box-alt" src={img5_3} />
@@ -222,6 +228,7 @@ function BoxContent(props) {
       case 6:
         return (
           <div className="img-container">
+            <h1>Delivery Challan</h1>
             <img className="img-box-alt" src={img6_1} />
             <img className="img-box-alt" src={img6_2} />
             <img className="img-box-alt" src={img6_3} />
@@ -286,6 +293,14 @@ function BoxContent(props) {
           }}
         >
           Next
+        </button>
+        <button
+          className="slidehome"
+          onClick={() => {
+            props.history.replace("/nancy-home");
+          }}
+        >
+          Home
         </button>
       </>
     );
