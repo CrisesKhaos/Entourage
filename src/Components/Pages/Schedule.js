@@ -2,7 +2,7 @@ import React from "react";
 import "./Events.css";
 function Schedule() {
   return (
-    <div className="container">
+    <div className="main-container">
       <h1>Coming Soon</h1>
     </div>
   );

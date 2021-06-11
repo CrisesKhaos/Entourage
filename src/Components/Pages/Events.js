@@ -7,7 +7,7 @@ function Events() {
   const [nancy, setnancy] = useState(false);
   if (nancy === false)
     return (
-      <div className="container">
+      <div className="main-container">
         <Popup open={login} onClick={setlogin} redirect={setnancy} />
         <div className="nancyDrew" onClick={() => setlogin(true)}>
           <p className="event-title">Fi-Nancy Drew</p>

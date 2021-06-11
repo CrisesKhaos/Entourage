@@ -10,6 +10,7 @@ import Particles from "react-particles-js";
 import ParticleBackround from "./Backround/ParticleBackround";
 import Schedule from "./Components/Pages/Schedule";
 import Nancy from "./Components/Pages/Nancy";
+import BoxContent from "./Components/Pages/BoxContent";
 
 ReactDOM.render(
   <Router>
@@ -23,6 +24,7 @@ ReactDOM.render(
       <Route path="/signin" exact component={Login} />
       <Route path="/schedule" exact component={Schedule} />
       <Route path="/nancy-home" exact component={Nancy} />
+      <Route path="/box-content" exact component={BoxContent} />
     </Switch>
   </Router>,
 

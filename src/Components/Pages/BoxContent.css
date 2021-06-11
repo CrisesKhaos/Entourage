@@ -1,0 +1,22 @@
+.card {
+  color: white;
+  background-color: #141414;
+  margin-left: 18vw;
+  margin-right: 18vw;
+  padding: 5vw;
+  border-radius: 10px;
+  flex-direction: column;
+}
+.img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-box {
+  margin-bottom: 20px;
+}
+.img-box-alt {
+  width: 54vw;
+}

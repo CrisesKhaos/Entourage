@@ -6,7 +6,7 @@ function App(props) {
   const [questionstate, setquestionstate] = useState("1");
 
   return (
-    <div className="container">
+    <div className="main-container">
       <p className="title">E-ntourage` 21</p>
       <h className="slogan">Survive to Revive</h>
     </div>
