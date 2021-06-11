@@ -1,12 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Redirect } from "react-router-dom";
 import "./BoxContent.css";
 import img1_2 from "./BoxImg/Box1_2.PNG";
 import img1_1 from "./BoxImg/Box1_1.PNG";
 import img2_2 from "./BoxImg/Box2_2.PNG";
-import img2_1 from "./BoxImg/Box1_2.PNG";
+import img2_1 from "./BoxImg/Box2_1.PNG";
 import img3 from "./BoxImg/Box3.PNG";
 import img4 from "./BoxImg/Box4.png";
+//box 5 index so no - 6
+import img5_1 from "./BoxImg/Box5_1.jpeg";
+import img5_2 from "./BoxImg/Box5_2.jpeg";
+import img5_3 from "./BoxImg/Box5_3.jpeg";
+import img5_4 from "./BoxImg/Box5_4.jpeg";
+import img5_5 from "./BoxImg/Box5_5.jpeg";
+//box 6 index so no - 7
+import img6_1 from "./BoxImg/Box6_1.PNG";
+import img6_2 from "./BoxImg/Box6_2.PNG";
+import img6_3 from "./BoxImg/Box6_3.PNG";
+import img6_4 from "./BoxImg/Box6_4.PNG";
+import img6_5 from "./BoxImg/Box6_5.PNG";
+import Popup from "../Popup/Popup";
+
 function BoxContent(props) {
+  const [popupOpen, setpopupOpen] = useState(false);
+  const [auth, setauth] = useState(false);
+  const [next, setnext] = useState(false);
+  useEffect(() => {
+    setauth(false);
+    setnext(false);
+  }, [auth]);
+  console.log(auth);
   function Sort(props1) {
     switch (props1.index) {
       case 0:
@@ -187,23 +210,98 @@ function BoxContent(props) {
           </div>
         );
       case 5:
-        return <h1>No content rn</h1>;
+        return (
+          <div className="img-container">
+            <img className="img-box-alt" src={img5_1} />
+            <img className="img-box-alt" src={img5_2} />
+            <img className="img-box-alt" src={img5_3} />
+            <img className="img-box-alt" src={img5_4} />
+            <img className="img-box-alt" src={img5_5} />
+          </div>
+        );
       case 6:
-        return <h1>No content rn</h1>;
+        return (
+          <div className="img-container">
+            <img className="img-box-alt" src={img6_1} />
+            <img className="img-box-alt" src={img6_2} />
+            <img className="img-box-alt" src={img6_3} />
+            <img className="img-box-alt" src={img6_4} />
+            <img className="img-box-alt" src={img6_5} />
+          </div>
+        );
     }
   }
 
-  return (
-    <>
-      <div className="card">{<Sort index={props.location.state.index} />}</div>
-      <button
-        className="slidebck"
-        onClick={() => props.history.replace("/nancy-home")}
-      >
-        Back
-      </button>
-    </>
-  );
+  if (!auth)
+    return (
+      <>
+        <Popup
+          pass={true}
+          onClick={setpopupOpen}
+          open={popupOpen}
+          inScene={true}
+          setAuth={setauth}
+        />
+        <div className="card">
+          {<Sort index={props.location.state.index} />}
+        </div>
+        <button
+          className="slidebck"
+          onClick={() => {
+            if (props.location.state.index !== 0) {
+              setnext(false);
+              if (
+                props.location.state.index - 1 === 4 ||
+                props.location.state.index - 1 === 5
+              ) {
+                setpopupOpen(true);
+                console.log("bruh");
+              } else
+                props.history.replace({
+                  pathname: "/box-content",
+                  state: { index: props.location.state.index - 1 },
+                });
+            } else props.history.replace("/nancy-home");
+          }}
+        >
+          Back
+        </button>
+        <button
+          className="slidenext"
+          onClick={() => {
+            if (props.location.state.index !== 6) {
+              setnext(true);
+              if (
+                props.location.state.index + 1 === 4 ||
+                props.location.state.index + 1 === 5
+              ) {
+                setpopupOpen(true);
+                console.log("bruh");
+              } else
+                props.history.replace({
+                  pathname: "/box-content",
+                  state: { index: props.location.state.index + 1 },
+                });
+            } else props.history.replace("/nancy-home");
+          }}
+        >
+          Next
+        </button>
+      </>
+    );
+  else
+    return (
+      <Redirect
+        to={{
+          pathname: "/box-content",
+          state: {
+            index: next
+              ? props.location.state.index + 1
+              : props.location.state.index - 1,
+          },
+        }}
+      />
+    );
 }
 
 export default BoxContent;

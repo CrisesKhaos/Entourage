@@ -10,12 +10,16 @@ function Popup(props) {
   };
 
   const submitHandler = (e) => {
-    console.log("asdf");
-    console.log(code.toUpperCase());
     if (code.toUpperCase() === "ASDF" || code.toUpperCase() === "ZXCV") {
-      props.onClick(false);
-      props.redirect(true);
-      seterror("");
+      if (props.inScene) {
+        props.setAuth(true);
+        props.onClick(false);
+        seterror("");
+      } else {
+        props.onClick(false);
+        props.redirect(true);
+        seterror("");
+      }
     } else {
       seterror("Please enter a valid code.");
     }
@@ -33,7 +37,7 @@ function Popup(props) {
           }}
         />
         <div className="modal">
-          Enter your code
+          {props.pass ? "Enter your password" : "Enter your code"}
           <input type="text" className="field" onChange={changeHandler}></input>
           <div className="wrong">{error}</div>
           <button className="slide" onClick={submitHandler}>
