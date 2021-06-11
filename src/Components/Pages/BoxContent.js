@@ -156,7 +156,7 @@ function BoxContent(props) {
       case 3:
         return (
           <div className="img-container">
-            <img className="img-box" src={img3} />
+            <img className="img-box-alt" src={img3} />
           </div>
         );
       case 4:
