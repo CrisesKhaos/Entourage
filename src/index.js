@@ -11,6 +11,7 @@ import ParticleBackround from "./Backround/ParticleBackround";
 import Schedule from "./Components/Pages/Schedule";
 import Nancy from "./Components/Pages/Nancy";
 import BoxContent from "./Components/Pages/BoxContent";
+import Fundamentals from "./Components/Pages/Fundamentals";
 
 ReactDOM.render(
   <Router>
@@ -25,6 +26,7 @@ ReactDOM.render(
       <Route path="/schedule" exact component={Schedule} />
       <Route path="/nancy-home" exact component={Nancy} />
       <Route path="/box-content" exact component={BoxContent} />
+      <Route path="/fundamentals" exact component={Fundamentals} />
     </Switch>
   </Router>,
 

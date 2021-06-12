@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../card.css";
 import firebase from "firebase/app";
 import "firebase/database";
@@ -11,6 +11,15 @@ function Login(props) {
   const [pass, setpass] = useState("");
   const [wrong, setwrong] = useState("");
   var database = firebase.database().ref();
+
+  useEffect(() => {
+    if (localStorage.getItem("loggedIn") === "true") {
+      props.history.push({
+        pathname: "/fundamentals",
+        state: { auth: true },
+      });
+    }
+  }, []);
 
   const emailchangeHandler = (e) => {
     setemail(e.target.value);
@@ -27,10 +36,17 @@ function Login(props) {
         if (snapshot.exists()) {
           setwrong("");
           if (snapshot.child("pass").val() === pass) {
-            props.history.push({
-              pathname: "/home",
-              state: { auth: true },
-            });
+            if (snapshot.child("loggedIn").val() === true) {
+              setwrong("Uh,oh! Someones already logged in with this account");
+            } else {
+              localStorage.setItem("loggedIn", true);
+              localStorage.setItem("email", email);
+              database.child(email.toLowerCase()).child("loggedIn").set(true);
+              props.history.push({
+                pathname: "/fundamentals",
+                state: { auth: true },
+              });
+            }
           } else {
             setwrong("Please enter a valid password!");
           }
@@ -49,11 +65,15 @@ function Login(props) {
       <h className="tag">Email</h>
       <input
         type="text"
-        className="field"
+        className="field1"
         onChange={emailchangeHandler}
       ></input>
       <h className="tag">Password</h>
-      <input type="text" className="field" onChange={passchangeHandler}></input>
+      <input
+        type="text"
+        className="field1"
+        onChange={passchangeHandler}
+      ></input>
       <p className="wrong">{wrong}</p>
       <button className="slide" onClick={submitHandler}>
         Submit

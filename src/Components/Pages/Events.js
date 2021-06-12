@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Popup from "../Popup/Popup";
 import "./Events.css";
 import { Redirect } from "react-router-dom";
-function Events() {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+function Events(props) {
   const [login, setlogin] = useState(false);
   const [nancy, setnancy] = useState(false);
   if (nancy === false)
@@ -22,7 +23,12 @@ function Events() {
           </div>
         </div>
 
-        <div className="fundamentals">
+        <div
+          className="fundamentals"
+          onClick={() => {
+            props.history.push("/signin");
+          }}
+        >
           <div className="event-title">Fun(Damentals)</div>
           <div className="desc">
             Be the Sherlock Holmes of your story and come up with modern
@@ -32,6 +38,7 @@ function Events() {
             quality of reading between the lines, only few smart ones can read
             between the numbers, the prerequisite here, is Forensic Accounting.
             If you are Fi-nancy enough then this is your reign to claim.
+            <FontAwesomeIcon icon="check-square" />
           </div>
         </div>
       </div>

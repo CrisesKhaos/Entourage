@@ -34,7 +34,7 @@
   line-height: 1;
   margin: 0.5em;
   padding: 1em 2em;
-  font-size: 0.91rem;
+  font-size: 0.75vw;
 }
 
 .slidebck:hover,
@@ -58,7 +58,7 @@
   line-height: 1;
   margin: 0.5em;
   padding: 1em 2em;
-  font-size: 0.91rem;
+  font-size: 0.75vw;
 }
 
 .slidenext:hover,
@@ -81,7 +81,7 @@
   line-height: 1;
   margin: 0.5em;
   padding: 1em 2em;
-  font-size: 0.91rem;
+  font-size: 0.75vw;
 }
 
 .slidehome:hover,
