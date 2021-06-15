@@ -373,6 +373,14 @@ function FundContent(props) {
           Submit
         </button>
       </div>
+      <button
+        className="slidehome1"
+        onClick={() => {
+          props.history.replace("/fundamentals");
+        }}
+      >
+        Home
+      </button>
     </div>
   );
 }
