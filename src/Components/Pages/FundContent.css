@@ -1,0 +1,56 @@
+.main-card {
+  width: 80vw;
+  padding: 5vw;
+  margin: 10vw;
+  background-color: #242526;
+  color: white;
+  font-size: 2vw;
+  border-radius: 5px;
+}
+
+.cont {
+  display: flex;
+  position: fixed;
+  bottom: 1vh;
+  flex-direction: row;
+}
+.field1 {
+  margin: 0.5vw;
+  margin-left: 0;
+  margin: 0;
+  font-size: 2vw;
+  text-decoration: none;
+  background-color: #242526;
+  color: white;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+
+.slidecont-alt {
+  color: white;
+  transition: 0.25s;
+  background: #7bd43b;
+  border: 2px #7bd43b;
+  font: inherit;
+  line-height: 1;
+  padding: 1em 2em;
+  font-size: 1vw;
+  margin: 0.5vw;
+}
+
+.slidecont-alt:hover,
+.slidecont-alt:focus {
+  border-color: #7bd43b;
+  box-shadow: 0 0.5em 0.5em -0.4em #7bd43b;
+  transform: translateY(-0.25em);
+}
+
+.wrong {
+  bottom: 50;
+  position: fixed;
+  font-size: 1.2vw;
+  color: #ff7f82;
+}

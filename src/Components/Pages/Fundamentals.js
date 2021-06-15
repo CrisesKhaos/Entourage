@@ -27,7 +27,15 @@ function Fundamentals(props) {
         <button className="slideout" onClick={logOutHandler}>
           Log Out
         </button>
-        <button className="slidecont" onClick={logOutHandler}>
+        <button
+          className="slidecont"
+          onClick={() => {
+            props.history.push({
+              pathname: "/fund-content",
+              state: { index: 0 },
+            });
+          }}
+        >
           Continue
         </button>
       </div>

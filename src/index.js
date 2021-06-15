@@ -12,6 +12,7 @@ import Schedule from "./Components/Pages/Schedule";
 import Nancy from "./Components/Pages/Nancy";
 import BoxContent from "./Components/Pages/BoxContent";
 import Fundamentals from "./Components/Pages/Fundamentals";
+import FundContent from "./Components/Pages/FundContent";
 
 ReactDOM.render(
   <Router>
@@ -27,6 +28,7 @@ ReactDOM.render(
       <Route path="/nancy-home" exact component={Nancy} />
       <Route path="/box-content" exact component={BoxContent} />
       <Route path="/fundamentals" exact component={Fundamentals} />
+      <Route path="/fund-content" exact component={FundContent} />
     </Switch>
   </Router>,
 
