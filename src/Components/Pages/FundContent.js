@@ -1,4 +1,20 @@
 import React, { useState } from "react";
+import img1_1 from "./FundImg/Page 1.1.jpg";
+import img1_3 from "./FundImg/page 1_3.jpg";
+import img1_4 from "./FundImg/page 1_4.jpg";
+import img3 from "./FundImg/page 3.png";
+import img5 from "./FundImg/page 5.jpg";
+import img6 from "./FundImg/page 6.jpg";
+import img7 from "./FundImg/page 7.jpg";
+import img8 from "./FundImg/page 8.jpg";
+import img9_1 from "./FundImg/page 9_1.jpg";
+import img9_2 from "./FundImg/page 9_2.jpg";
+import img9_3 from "./FundImg/page 9_3.jpg";
+import img9_4 from "./FundImg/page 9_4.jpg";
+import img13 from "./FundImg/page 13.jpg";
+import img13_2 from "./FundImg/page 13_2.jpg";
+import img14 from "./FundImg/page 14.jpg";
+
 import "./FundContent.css";
 
 function FundContent(props) {
@@ -25,20 +41,25 @@ function FundContent(props) {
     switch (props1.index) {
       case 0:
         return (
-          <p>
-            Q1. Harshad is a student from Mumbai. He is a bright student and
-            dreams to build a successful career in the corporate world. He has a
-            good quantitative ability and has an interest in tracking the stock
-            market and business world. After completing high school, he decides
-            to take an undergrad course in the field of finance overseas and
-            starts searching for the right college for him. He received
-            acceptance letter from four colleges, one of which he&rsquo;s
-            planning to revert back is located in the city where one of your
-            favorite companions has left his footprints on the map of this city
-            and one of the alumni of this college is a spouse of a respectable
-            man in the world and is acting as one of the Avengers to his nation
-            .
-          </p>
+          <div>
+            <p>
+              Q1. Harshad is a student from Mumbai. He is a bright student and
+              dreams to build a successful career in the corporate world. He has
+              a good quantitative ability and has an interest in tracking the
+              stock market and business world. After completing high school, he
+              decides to take an undergrad course in the field of finance
+              overseas and starts searching for the right college for him. He
+              received acceptance letter from four colleges, one of which
+              he&rsquo;s planning to revert back is located in the city where
+              one of your favorite companions has left his footprints on the map
+              of this city and one of the alumni of this college is a spouse of
+              a respectable man in the world and is acting as one of the
+              Avengers to his nation .
+            </p>
+            <img src={img1_1} alt="Image" className="img-box-fund" />
+            <img src={img1_3} alt="Image" className="img-box-fund" />
+            <img src={img1_4} alt="Image" className="img-box-fund" />
+          </div>
         );
       case 1:
         return (
@@ -150,100 +171,123 @@ function FundContent(props) {
               &#2325;&#2352;&#2344;&#2375; &#2325;&#2366; &#2319;&#2325;
               &#2340;&#2352;&#2368;&#2325;&#2366;&#2404;
             </p>
+            <img src={img3} alt="Image" className="img-box-fund" />
           </div>
         );
       case 3:
         return (
-          <p>
-            Q4. After having navigated through his college, visa, scholarship
-            and education loan, Harshad has reached London, and he is exploring
-            the city, looking for a few things, to make his life in London more
-            affordable. The first place which he checked is located very close
-            to the office which helps the Britishers to visit India (in a legal
-            way, ofcourse!). The Intelligence of the students living here cannot
-            be Questioned. This place is located 1.5 miles away from his campus.
-            Spiderman is currently patrolling the city which houses the cousin
-            of the London bridge and below this bridge, people sing till their
-            vocal cords give up.He is casting his web all across the city so
-            that he can catch the bad guys. This place is located very close to
-            the street which is named after something which every country has
-            and their citizens must abide by, else, Jake Peralta might arrest
-            you! This place is second on Harshad's list. The third place which
-            he is considering is located approximately 1 km away from his
-            college, this place has 3 universities in very close proximity. It
-            is also located near a square whose name is also the first name of a
-            famous canadian standup comedian. It shares its name with a famous
-            place located in the capital of our country. After checking out all
-            these places, Harshad chose the one which was the most affordable
-            one.
-          </p>
+          <div>
+            <p>
+              Q4. After having navigated through his college, visa, scholarship
+              and education loan, Harshad has reached London, and he is
+              exploring the city, looking for a few things, to make his life in
+              London more affordable. The first place which he checked is
+              located very close to the office which helps the Britishers to
+              visit India (in a legal way, ofcourse!). The Intelligence of the
+              students living here cannot be Questioned. This place is located
+              1.5 miles away from his campus. Spiderman is currently patrolling
+              the city which houses the cousin of the London bridge and below
+              this bridge, people sing till their vocal cords give up.He is
+              casting his web all across the city so that he can catch the bad
+              guys. This place is located very close to the street which is
+              named after something which every country has and their citizens
+              must abide by, else, Jake Peralta might arrest you! This place is
+              second on Harshad's list. The third place which he is considering
+              is located approximately 1 km away from his college, this place
+              has 3 universities in very close proximity. It is also located
+              near a square whose name is also the first name of a famous
+              canadian standup comedian. It shares its name with a famous place
+              located in the capital of our country. After checking out all
+              these places, Harshad chose the one which was the most affordable
+              one.
+            </p>
+          </div>
         );
       case 4:
         return (
-          <p>
-            Q5. While living in the hostel, Harshad once got into an argument
-            with his friends about the authenticity of CryptoCurrency, where his
-            friends completely believed that it was just a bubble. To prove his
-            point, he explained to them how his investment in a crypto whose One
-            of the blockchain engineers shares his same surname with one of the
-            famous bollywood actors, who made debut in 2009 and an alumni of
-            Roman Catholic affiliated college gave him 200x in a month. His
-            friends were now curious about which currency Harshad was talking
-            about.
-          </p>
+          <div>
+            <p>
+              Q5. While living in the hostel, Harshad once got into an argument
+              with his friends about the authenticity of CryptoCurrency, where
+              his friends completely believed that it was just a bubble. To
+              prove his point, he explained to them how his investment in a
+              crypto whose One of the blockchain engineers shares his same
+              surname with one of the famous bollywood actors, who made debut in
+              2009 and an alumni of Roman Catholic affiliated college gave him
+              200x in a month. His friends were now curious about which currency
+              Harshad was talking about.
+            </p>
+            <img src={img5} alt="Image" className="img-box-fund" />
+          </div>
         );
       case 5:
         return (
-          <p>
-            Q6. After his graduation, Harshad is considering opportunities in
-            areas like Stock trading, investment banking, business consulting
-            etc in India. Hence he applied for job interviews at a few
-            companies. One common question which he faced while giving his
-            aptitude test was that he had to find out when a was the last time a
-            particular pattern was formed in the charts which values its group
-            of companies on (total free float market capitalization/ Base market
-            capitalization) * Base index value.
-          </p>
+          <div>
+            <p>
+              Q6. After his graduation, Harshad is considering opportunities in
+              areas like Stock trading, investment banking, business consulting
+              etc in India. Hence he applied for job interviews at a few
+              companies. One common question which he faced while giving his
+              aptitude test was that he had to find out when a was the last time
+              a particular pattern was formed in the charts which values its
+              group of companies on (total free float market capitalization/
+              Base market capitalization) * Base index value.
+            </p>
+            <img src={img6} alt="Image" className="img-box-fund" />
+          </div>
         );
       case 6:
         return (
-          <p>
-            Q7. Harshad managed to answer the previous question successfully in
-            all the interviews, which helped him to land job offers from various
-            companies. After carefully considering all the options , he decided
-            on which organisation he wanted to work for. In order to share his
-            joy with his family and friends, Harshad decided on a fun way to
-            announce his placement. All his family and friends had to put on
-            their decoding brains to get the good news
-          </p>
+          <div>
+            <p>
+              Q7. Harshad managed to answer the previous question successfully
+              in all the interviews, which helped him to land job offers from
+              various companies. After carefully considering all the options ,
+              he decided on which organisation he wanted to work for. In order
+              to share his joy with his family and friends, Harshad decided on a
+              fun way to announce his placement. All his family and friends had
+              to put on their decoding brains to get the good news
+            </p>
+            <img src={img7} alt="Image" className="img-box-fund" />
+          </div>
         );
       case 7:
         return (
-          <p>
-            Q8. While being a junior level employee, one of his colleague gave
-            harshad this which new paper given below and Asked for the type of
-            natural phenomenon of fluctuation which started occurring from
-            november 2018 in the price of the company which deals in metal x and
-            the controlling authority of this company makes sure that all of its
-            actions are taken in the view of public interest.
-          </p>
+          <div>
+            <p>
+              Q8. While being a junior level employee, one of his colleague gave
+              harshad this which new paper given below and Asked for the type of
+              natural phenomenon of fluctuation which started occurring from
+              november 2018 in the price of the company which deals in metal x
+              and the controlling authority of this company makes sure that all
+              of its actions are taken in the view of public interest.
+            </p>
+            <img src={img8} alt="Image" className="img-box-fund" />
+          </div>
         );
       case 8:
         return (
-          <p>
-            Q9. Along with tracking the financial markets and dealing with his
-            clients and superiors, Harshad would use his finance skills and
-            knowledge to make some money for himself. While he was scanning the
-            market, he found out that Tata power did a great business this year.
-            The company's financials will be out in the next two weeks along
-            with a few major announcements by the company. There is also a great
-            sense of optimism among the investors. He too was certain that the
-            company&rsquo;s price would surge. Hence he decided to exploit this
-            opportunity.Since dealing his options was not his forte, he was
-            unable to decide on a current price. Hence, his broker helped him
-            with the dealing.This is the cheque he was paying to his broker,
-            Motilal oswal so that they can execute the contract on his behalf.{" "}
-          </p>
+          <div>
+            <p>
+              Q9. Along with tracking the financial markets and dealing with his
+              clients and superiors, Harshad would use his finance skills and
+              knowledge to make some money for himself. While he was scanning
+              the market, he found out that Tata power did a great business this
+              year. The company's financials will be out in the next two weeks
+              along with a few major announcements by the company. There is also
+              a great sense of optimism among the investors. He too was certain
+              that the company&rsquo;s price would surge. Hence he decided to
+              exploit this opportunity.Since dealing his options was not his
+              forte, he was unable to decide on a current price. Hence, his
+              broker helped him with the dealing.This is the cheque he was
+              paying to his broker, Motilal oswal so that they can execute the
+              contract on his behalf.{" "}
+            </p>
+            <img src={img9_1} alt="Image" className="img-box-fund-alt" />
+            <img src={img9_2} alt="Image" className="img-box-fund-alt" />
+            <img src={img9_3} alt="Image" className="img-box-fund-alt" />
+            <img src={img9_4} alt="Image" className="img-box-fund-alt" />
+          </div>
         );
       case 9:
         return (
@@ -318,33 +362,39 @@ function FundContent(props) {
         );
       case 12:
         return (
-          <p>
-            Q13. Harshad has now excelled at his job and has made prudent
-            investment choices. It's now time to treat himself to one of
-            life&rsquo;s luxuries that is being called a necessity. He has
-            decided to buy himself a new car. He has decided to buy a car from a
-            brand whose logo has evolved from the logo of another company which
-            featured a black ring bearing the company name surrounding the
-            company logo. The specifications needed are:
-          </p>
+          <div>
+            <p>
+              Q13. Harshad has now excelled at his job and has made prudent
+              investment choices. It's now time to treat himself to one of
+              life&rsquo;s luxuries that is being called a necessity. He has
+              decided to buy himself a new car. He has decided to buy a car from
+              a brand whose logo has evolved from the logo of another company
+              which featured a black ring bearing the company name surrounding
+              the company logo. The specifications needed are:
+            </p>
+            <img src={img13} alt="Image" className="img-box-fund" />
+            <img src={img13_2} alt="Image" className="img-box-fund" />
+          </div>
         );
       case 13:
         return (
-          <p>
-            Q14. Harshad is good with finance in his professional and personal
-            life, he now plans to manage his daily household expense by making a
-            strict budget for his personal finance.
-            <br /> Hint: Net Income= i-(ii + iii).
-            <br /> Savings : ii +3+xv
-          </p>
+          <div>
+            <p>
+              Q14. Harshad is good with finance in his professional and personal
+              life, he now plans to manage his daily household expense by making
+              a strict budget for his personal finance.
+              <br /> Hint: Net Income= i-(ii + iii).
+              <br /> Savings : ii +3+xv
+            </p>
+            <img src={img14} alt="Image" className="img-box-fund" />
+          </div>
         );
     }
   }
 
-  function submitHandler() {
+  const submitHandler = () => {
     setcurrentAns("");
     if (currentAns === ansList[props.location.state.index]) {
-      setcurrentAns("");
       if (props.location.state.index !== 13)
         props.history.push({
           pathname: "/fund-content",
@@ -357,18 +407,23 @@ function FundContent(props) {
         });
       seterror("");
     } else seterror("Incorrect Answer");
-  }
+  };
   const changeHandler = (e) => {
     setcurrentAns(e.target.value.toString().toLowerCase().trim());
     console.log(currentAns);
   };
   return (
-    <div className="main-container">
+    <div className="main-cont-fund">
       <div className="main-card">
         {<SortQues index={props.location.state.index} />}
       </div>
       <div className="cont">
-        <input type="text" className="field1" onChange={changeHandler}></input>
+        <input
+          type="text"
+          className="field1"
+          onChange={changeHandler}
+          value={currentAns}
+        ></input>
         <button className="slidecont-alt" onClick={submitHandler}>
           Submit
         </button>

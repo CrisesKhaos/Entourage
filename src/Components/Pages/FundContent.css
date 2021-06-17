@@ -1,11 +1,21 @@
 .main-card {
-  width: 80vw;
+  width: fit-content;
   padding: 5vw;
-  margin: 10vw;
+  margin: 8vw;
+  margin-top: 10px;
   background-color: #242526;
   color: white;
   font-size: 2vw;
   border-radius: 5px;
+}
+
+.main-cont-fund {
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
 }
 
 .cont {
@@ -76,4 +86,12 @@
   border-color: #f5f0ed;
   box-shadow: 0 0.5em 0.5em -0.4em #f5f0ed;
   transform: translateY(-0.25em);
+}
+
+.img-box-fund {
+  margin: 20px;
+}
+.img-box-fund-alt {
+  margin: 20px;
+  width: 50vw;
 }
