@@ -15,6 +15,7 @@ import img13 from "./FundImg/page 13.jpg";
 import img13_2 from "./FundImg/page 13_2.jpg";
 import img14 from "./FundImg/page 14.jpg";
 
+import firebase from "firebase/app";
 import "./FundContent.css";
 
 function FundContent(props) {
@@ -36,6 +37,7 @@ function FundContent(props) {
     "bmw220dmsports",
     "zeropointfour",
   ];
+  var database = firebase.database().ref();
 
   function SortQues(props1) {
     switch (props1.index) {
@@ -185,21 +187,23 @@ function FundContent(props) {
               located very close to the office which helps the Britishers to
               visit India (in a legal way, ofcourse!). The Intelligence of the
               students living here cannot be Questioned. This place is located
-              1.5 miles away from his campus. Spiderman is currently patrolling
-              the city which houses the cousin of the London bridge and below
-              this bridge, people sing till their vocal cords give up.He is
-              casting his web all across the city so that he can catch the bad
-              guys. This place is located very close to the street which is
-              named after something which every country has and their citizens
-              must abide by, else, Jake Peralta might arrest you! This place is
-              second on Harshad's list. The third place which he is considering
-              is located approximately 1 km away from his college, this place
-              has 3 universities in very close proximity. It is also located
-              near a square whose name is also the first name of a famous
-              canadian standup comedian. It shares its name with a famous place
-              located in the capital of our country. After checking out all
-              these places, Harshad chose the one which was the most affordable
-              one.
+              1.5 miles away from his campus.
+              <br /> Spiderman is currently patrolling the city which houses the
+              cousin of the London bridge and below this bridge, people sing
+              till their vocal cords give up.He is casting his web all across
+              the city so that he can catch the bad guys. This place is located
+              very close to the street which is named after something which
+              every country has and their citizens must abide by, else, Jake
+              Peralta might arrest you! This place is second on Harshad's list.{" "}
+              <br />
+              The third place which he is considering is located approximately 1
+              km away from his college, this place has 3 universities in very
+              close proximity. It is also located near a square whose name is
+              also the first name of a famous canadian standup comedian. It
+              shares its name with a famous place located in the capital of our
+              country.
+              <br /> After checking out all these places, Harshad chose the one
+              which was the most affordable one.
             </p>
           </div>
         );
@@ -395,6 +399,10 @@ function FundContent(props) {
   const submitHandler = () => {
     setcurrentAns("");
     if (currentAns === ansList[props.location.state.index]) {
+      database
+        .child(localStorage.getItem("email"))
+        .child("ques-fund")
+        .set(props.location.state.index + 1);
       if (props.location.state.index !== 13)
         props.history.push({
           pathname: "/fund-content",
@@ -408,6 +416,7 @@ function FundContent(props) {
       seterror("");
     } else seterror("Incorrect Answer");
   };
+
   const changeHandler = (e) => {
     setcurrentAns(e.target.value.toString().toLowerCase().trim());
     console.log(currentAns);

@@ -65,16 +65,16 @@ function Login(props) {
       <h className="tag">Email</h>
       <input
         type="text"
-        className="field1"
+        className="field-log"
         onChange={emailchangeHandler}
       ></input>
       <h className="tag">Password</h>
       <input
         type="text"
-        className="field1"
+        className="field-log"
         onChange={passchangeHandler}
       ></input>
-      <p className="wrong">{wrong}</p>
+      <p className="wrong-log">{wrong}</p>
       <button className="slide" onClick={submitHandler}>
         Submit
       </button>

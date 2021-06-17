@@ -16,7 +16,7 @@
   box-shadow: inset 6.5rem 0 0 0 #7bd43b;
 }
 
-.field1 {
+.field-log {
   margin: 10px;
   font-size: 1.75rem;
   text-decoration: none;
@@ -38,6 +38,6 @@
   justify-content: start;
 }
 
-.wrong {
+.wrong-log {
   color: #ff7f82;
 }

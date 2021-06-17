@@ -10,6 +10,47 @@ function Fundamentals(props) {
     }
   }, []);
 
+  const pushHandler = (e) => {
+    database
+      .child(localStorage.getItem("email"))
+      .child("timestamp")
+      .get()
+      .then((snapshot) => {
+        if (!snapshot.exists()) {
+          database
+            .child(localStorage.getItem("email"))
+            .child("timestamp")
+            .set(firebase.database.ServerValue.TIMESTAMP);
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+    database
+      .child(localStorage.getItem("email"))
+      .child("ques-fund")
+      .get()
+      .then((snapshot) => {
+        if (snapshot.exists()) {
+          props.history.push({
+            pathname: "/fund-content",
+            state: { index: snapshot.val() },
+          });
+        } else {
+          database
+            .child(localStorage.getItem("email"))
+            .child("ques-fund")
+            .set(0);
+          props.history.push({
+            pathname: "/fund-content",
+            state: { index: 0 },
+          });
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
   const logOutHandler = (e) => {
     database.child(localStorage.getItem("email")).child("loggedIn").set(false);
     localStorage.clear();
@@ -27,15 +68,7 @@ function Fundamentals(props) {
         <button className="slideout" onClick={logOutHandler}>
           Log Out
         </button>
-        <button
-          className="slidecont"
-          onClick={() => {
-            props.history.push({
-              pathname: "/fund-content",
-              state: { index: 0 },
-            });
-          }}
-        >
+        <button className="slidecont" onClick={pushHandler}>
           Continue
         </button>
       </div>
