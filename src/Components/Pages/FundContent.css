@@ -95,3 +95,10 @@
   margin: 20px;
   width: 50vw;
 }
+
+.bruh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
