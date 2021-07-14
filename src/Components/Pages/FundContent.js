@@ -147,6 +147,17 @@ function FundContent(props) {
             <img src={img26} alt="Image" className="img-box-fund" />
           </div>
         );
+      case 14:
+        return (
+          <>
+            <h1>Ayy you did it !!!</h1>
+            <img
+              src="https://media.discordapp.net/attachments/531108594943524866/860802197535981568/Bo.png?width=340&height=675"
+              alt="Image"
+              className="img-box-fund"
+            />
+          </>
+        );
     }
   }
 
@@ -155,16 +166,11 @@ function FundContent(props) {
     if (currentAns === ansList[props.location.state.index]) {
       database
         .child(localStorage.getItem("email"))
-        .child("ques-fund")
+        .child("ques_fund")
         .set(props.location.state.index + 1);
-      if (props.location.state.index !== 13)
+      if (props.location.state.index !== 14)
         props.history.push({
           pathname: "/fund-content",
-          state: { index: props.location.state.index + 1 },
-        });
-      else
-        props.history.push({
-          pathname: "/fundamentals",
           state: { index: props.location.state.index + 1 },
         });
       seterror("");
@@ -179,18 +185,23 @@ function FundContent(props) {
     <div className="main-cont-fund">
       <div className="main-card">
         {<SortQues index={props.location.state.index} />}
+        <div className="row-div">
+          {props.location.state.index !== 14 && (
+            <input
+              type="text"
+              className="field1"
+              onChange={changeHandler}
+              value={currentAns}
+            ></input>
+          )}
+          {props.location.state.index !== 14 && (
+            <button className="slidecont-alt" onClick={submitHandler}>
+              Submit
+            </button>
+          )}
+        </div>
       </div>
-      <div className="cont">
-        <input
-          type="text"
-          className="field1"
-          onChange={changeHandler}
-          value={currentAns}
-        ></input>
-        <button className="slidecont-alt" onClick={submitHandler}>
-          Submit
-        </button>
-      </div>
+
       <button
         className="slidehome1"
         onClick={() => {

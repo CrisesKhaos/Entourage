@@ -4,12 +4,18 @@ import "./Fundamentals.css";
 
 function Fundamentals(props) {
   var database = firebase.database().ref();
+  const [data, setdata] = useState([]);
   useEffect(() => {
     if (localStorage.getItem("loggedIn") !== "true") {
       props.history.replace("/signin");
     }
-  }, []);
 
+    database.orderByChild("ques_fund").on("child_added", (snapshot) => {
+      setdata(data.push(snapshot.val()));
+      console.log(data);
+    });
+  }, []);
+    
   const pushHandler = (e) => {
     database
       .child(localStorage.getItem("email"))
@@ -28,7 +34,7 @@ function Fundamentals(props) {
       });
     database
       .child(localStorage.getItem("email"))
-      .child("ques-fund")
+      .child("ques_fund")
       .get()
       .then((snapshot) => {
         if (snapshot.exists()) {
@@ -39,7 +45,7 @@ function Fundamentals(props) {
         } else {
           database
             .child(localStorage.getItem("email"))
-            .child("ques-fund")
+            .child("ques_fund")
             .set(0);
           props.history.push({
             pathname: "/fund-content",

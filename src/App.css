@@ -1,22 +1,22 @@
-.main-container {
+.main-cont-home {
+  overflow: hidden;
+  margin : 0px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items:center;
+  justify-content:center;
   height: 90vh;
-  position: relative;
 }
 
 .title {
-  position: absolute;
-  right: 50%;
-  bottom: 50%;
-  transform: translate(50%, 50%);
   color: aliceblue;
   font-size: 5rem;
 }
 
 .slogan {
-  position: absolute;
-  right: 50%;
-  bottom: 50%;
-  transform: translate(50%, 50%);
+ 
   color: aliceblue;
   font-size: 2rem;
 }
@@ -24,8 +24,9 @@
 .socialsCont {
   width: 100vw;
   margin-bottom: 1vh;
-  position: relative;
-
+  bottom: 0;
+  right: 0;
+  position: fixed;
   display: flex;
   justify-content: center;
   justify-self: end;
@@ -45,4 +46,13 @@
 
 .socials:hover {
   transform: translateY(-0.5vh);
+}
+
+.title-cont {
+  margin:0px;
+  justify-content: center;
+  align-items: center;
+  margin : 0px;
+  width: 90vw;
+  display: flex;
 }

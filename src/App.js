@@ -13,12 +13,16 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import Icon from "./Images/Icon.png";
 function App(props) {
   const [questionstate, setquestionstate] = useState("1");
 
   return (
-    <div className="main-container">
-      <p className="title">E-ntourage` 21 </p>
+    <div className="main-cont-home">
+      <div className="title-cont">
+        <img src={Icon} width="100px" height="100px" />
+        <div className="title">-ntourage` 21 </div>
+      </div>
       <h className="slogan">Survive to Revive</h>
       <div className="socialsCont">
         <a href="https://www.instagram.com/jhcentourage/">

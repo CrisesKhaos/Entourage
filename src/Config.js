@@ -13,3 +13,15 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 export default firebaseConfig;
+
+
+
+// var firebaseConfig = {
+//   apiKey: "AIzaSyC589FCtN2ObZzfHg7jS40piooPiZxGmeo",
+//   authDomain: "jhc-entourage.firebaseapp.com",
+//   projectId: "jhc-entourage",
+//   storageBucket: "jhc-entourage.appspot.com",
+//   messagingSenderId: "289958309120",
+//   appId: "1:289958309120:web:1e1366b2a67914604497e5",
+//   measurementId: "G-VXD302WG03"
+// };
