@@ -13,6 +13,8 @@ import Nancy from "./Components/Pages/Nancy";
 import BoxContent from "./Components/Pages/BoxContent";
 import Fundamentals from "./Components/Pages/Fundamentals";
 import FundContent from "./Components/Pages/FundContent";
+import Leaderboard from "./Components/Pages/Leaderboard/Leaderboard";
+import Admin from "./Components/Pages/Admin/Admin";
 
 ReactDOM.render(
   <Router>
@@ -29,6 +31,8 @@ ReactDOM.render(
       <Route path="/box-content" exact component={BoxContent} />
       <Route path="/fundamentals" exact component={Fundamentals} />
       <Route path="/fund-content" exact component={FundContent} />
+      <Route path="/leaderboard" exact component={Leaderboard} />
+      <Route path="/admin" exact component={Admin} />
     </Switch>
   </Router>,
 

@@ -5,17 +5,27 @@ import "./Fundamentals.css";
 function Fundamentals(props) {
   var database = firebase.database().ref();
   const [data, setdata] = useState([]);
+  const [isAdmin, setisAdmin] = useState(false);
   useEffect(() => {
     if (localStorage.getItem("loggedIn") !== "true") {
       props.history.replace("/signin");
     }
-
-    database.orderByChild("ques_fund").on("child_added", (snapshot) => {
-      setdata(data.push(snapshot.val()));
-      console.log(data);
-    });
+    database
+      .child(localStorage.getItem("email"))
+      .child("isAdmin")
+      .get()
+      .then((snapshot) => {
+        if (snapshot.exists && snapshot.val()) {
+          setisAdmin(true);
+          console.log(snapshot.val());
+        }
+      });
+    // database.orderByChild("ques_fund").on("child_added", (snapshot) => {
+    //   setdata(data.push(snapshot.val()));
+    //   console.log(data);
+    // });
   }, []);
-    
+
   const pushHandler = (e) => {
     database
       .child(localStorage.getItem("email"))
@@ -77,6 +87,19 @@ function Fundamentals(props) {
         <button className="slidecont" onClick={pushHandler}>
           Continue
         </button>
+        {isAdmin ? (
+          <button
+            className="slidehome1"
+            onClick={() => {
+              props.history.push({
+                pathname: "/admin",
+                state: { isAdmin: true },
+              });
+            }}
+          >
+            Admin
+          </button>
+        ) : null}
       </div>
     </div>
   );
