@@ -1,0 +1,108 @@
+.card-team {
+  cursor: pointer;
+  color: white;
+  flex-direction: column;
+  padding: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  transition: background 500ms;
+  transition-property: all;
+  background: #232526;
+  background: linear-gradient(to bottom, #414345, #232526);
+  border-radius: 13px;
+  opacity: 0;
+  font-size: 30px;
+}
+
+.phone-num {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.icon-in {
+  color: white;
+  padding: 6px;
+  transition: color 1s;
+}
+.icon-in:hover {
+  color: rgb(57, 117, 228);
+}
+
+.icon-mail {
+  color: white;
+
+  padding: 6px;
+  transition: color 1s;
+}
+.icon-mail:hover {
+  color: rgb(206, 193, 14);
+}
+.card-team:hover {
+  opacity: 1;
+}
+
+.person-wrapper {
+  height: fit-content;
+  width: fit-content;
+}
+
+.team-img {
+  position: relative;
+  bottom: 300px;
+  z-index: -1;
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.main-cont-team {
+  padding-top: 50px;
+  margin-bottom: -5000px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.rows-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper {
+  margin: 20px;
+  margin-top: 50px;
+  transform: translateY(-300px);
+}
+
+.wrapper-2 {
+  margin: 20px;
+  margin-top: 50px;
+  transform: translateY(-600px);
+}
+
+.wrapper-3 {
+  margin: 20px;
+  margin-top: 50px;
+  transform: translateY(-900px);
+}
+
+.wrapper-4 {
+  margin: 20px;
+  margin-top: 50px;
+  transform: translateY(-1200px);
+}
+.wrapper-5 {
+  margin: 20px;
+  margin-top: 50px;
+  transform: translateY(-1500px);
+}

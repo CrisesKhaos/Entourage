@@ -45,7 +45,14 @@ function Events(props) {
               </div>
             </div>
           </div>
-          <div className="others">Other Events..</div>
+          <div
+            className="others"
+            onClick={() => {
+              props.history.push("/other-events");
+            }}
+          >
+            Other Events..
+          </div>
         </div>
       </div>
     );

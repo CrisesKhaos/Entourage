@@ -15,6 +15,8 @@ import Fundamentals from "./Components/Pages/Fundamentals";
 import FundContent from "./Components/Pages/FundContent";
 import Leaderboard from "./Components/Pages/Leaderboard/Leaderboard";
 import Admin from "./Components/Pages/Admin/Admin";
+import OtherEvents from "./Components/Pages/OtherEvents/OtherEvents";
+import OurTeam from "./Components/Pages/Our Team/OurTeam";
 
 ReactDOM.render(
   <Router>
@@ -33,6 +35,8 @@ ReactDOM.render(
       <Route path="/fund-content" exact component={FundContent} />
       <Route path="/leaderboard" exact component={Leaderboard} />
       <Route path="/admin" exact component={Admin} />
+      <Route path="/other-events" exact component={OtherEvents} />
+      <Route path="/our-team" exact component={OurTeam} />
     </Switch>
   </Router>,
 

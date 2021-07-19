@@ -1,0 +1,34 @@
+.main-grid {
+  z-index: 1000;
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw 25vw;
+  grid-template-rows: 40vh 40vh;
+}
+
+.main-grid-alt {
+  z-index: -1000;
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw 25vw;
+  grid-template-rows: 40vh 40vh;
+}
+.grid-img {
+  width: 25vw;
+  height: 40vh;
+  transition: transform 500ms;
+  transition-property: all;
+}
+
+.grid-img:hover {
+  transform: translateX(10px) translateY(-10px);
+  box-shadow: -10px 10px #f67280;
+}
+.main-cont-other {
+  width: 100vw;
+  height: 86vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  padding: 0px;
+}
