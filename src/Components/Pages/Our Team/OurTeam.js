@@ -51,6 +51,88 @@ function OurTeam() {
       {/* //!2nd row */}
 
       <div className="rows-div">
+        <div className="wrapper-2">
+          <div className="card-team">
+            Khushi Murpana
+            <div className="phone-num">
+              <PhoneIcon
+                fontSize="large"
+                style={{ marginRight: "8px", color: "rgb(54, 223, 104)" }}
+              />
+              +91 99207 71097
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/kirti-kapai-2a09231a8">
+                <LinkedInIcon fontSize="large" className="icon-in" />
+              </a>
+              <MailIcon fontSize="large" className="icon-mail" />
+            </div>
+          </div>
+          <img className="team-img" src={img3_4} alt="Person🍙"></img>
+        </div>
+
+        <div className="wrapper-3">
+          <div className="card-team">
+            Priyanshi Tenjani
+            <div className="phone-num">
+              <PhoneIcon
+                fontSize="large"
+                style={{ marginRight: "8px", color: "rgb(54, 223, 104)" }}
+              />
+              +91 98338 61310
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/priyanshi-tejnani-78664a1a5">
+                <LinkedInIcon fontSize="large" className="icon-in" />
+              </a>
+              <MailIcon fontSize="large" className="icon-mail" />
+            </div>
+          </div>
+          <img className="team-img" src={img4_3} alt="Person🍙"></img>
+        </div>
+
+        <div className="wrapper">
+          <div className="card-team">
+            Prithvi Jain
+            <div className="phone-num">
+              <PhoneIcon
+                fontSize="large"
+                style={{ marginRight: "8px", color: "rgb(54, 223, 104)" }}
+              />
+              +91 77159 07702
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/prithvi-jain04">
+                <LinkedInIcon fontSize="large" className="icon-in" />
+              </a>
+              <MailIcon fontSize="large" className="icon-mail" />
+            </div>
+          </div>
+          <img className="team-img" src={img2_3} alt="Person🍙"></img>
+        </div>
+
+        <div className="wrapper-4">
+          <div className="card-team">
+            Vandana Hemdev
+            <div className="phone-num">
+              <PhoneIcon
+                fontSize="large"
+                style={{ marginRight: "8px", color: "rgb(54, 223, 104)" }}
+              />
+              +91 83697 38660
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/vandanahemdev">
+                <LinkedInIcon fontSize="large" className="icon-in" />
+              </a>
+              <MailIcon fontSize="large" className="icon-mail" />
+            </div>
+          </div>
+          <img className="team-img" src={img5_4} alt="Person🍙"></img>
+        </div>
+      </div>
+
+      <div className="rows-div">
         <div className="wrapper">
           <div className="card-team">
             Harsh Jalan
@@ -89,182 +171,24 @@ function OurTeam() {
           </div>
           <img className="team-img" src={img2_2} alt="Person🍙"></img>
         </div>
-        <div className="wrapper">
+        <div className="wrapper-4">
           <div className="card-team">
-            Prithvi Jain
+            Shubham Lalwani
             <div className="phone-num">
               <PhoneIcon
                 fontSize="large"
                 style={{ marginRight: "8px", color: "rgb(54, 223, 104)" }}
               />
-              +91 77159 07702
+              +91 77971 30405
             </div>
             <div>
-              <a href="https://www.linkedin.com/in/prithvi-jain04">
+              <a href="https://www.linkedin.com/in/shubham-lalwani-26812a1b6">
                 <LinkedInIcon fontSize="large" className="icon-in" />
               </a>
               <MailIcon fontSize="large" className="icon-mail" />
             </div>
           </div>
-          <img className="team-img" src={img2_3} alt="Person🍙"></img>
-        </div>
-        <div className="wrapper">
-          <div className="card-team">
-            Arnav Dubey
-            <div className="phone-num">
-              <PhoneIcon
-                fontSize="large"
-                style={{ marginRight: "8px", color: "rgb(54, 223, 104)" }}
-              />
-              +91 70142 41608
-            </div>
-            <div>
-              <a href="https://www.linkedin.com/in/arnav-dubey-5491aa101">
-                <LinkedInIcon fontSize="large" className="icon-in" />
-              </a>
-              <MailIcon fontSize="large" className="icon-mail" />
-            </div>
-          </div>
-          <img className="team-img" src={img2_4} alt="Person🍙"></img>
-        </div>
-      </div>
-
-      <div className="rows-div">
-        <div className="wrapper-2">
-          <div className="card-team">
-            Adit Shahani
-            <div className="phone-num">
-              <PhoneIcon
-                fontSize="large"
-                style={{ marginRight: "8px", color: "rgb(54, 223, 104)" }}
-              />
-              +91 89494 77378
-            </div>
-            <div>
-              <a href="https://www.linkedin.com/in/adit-shahani-344605209">
-                <LinkedInIcon fontSize="large" className="icon-in" />
-              </a>
-              <MailIcon fontSize="large" className="icon-mail" />
-            </div>
-          </div>
-          <img className="team-img" src={img3_1} alt="Person🍙"></img>
-        </div>
-        <div className="wrapper-2">
-          <div className="card-team">
-            Darsh Parekh
-            <div className="phone-num">
-              <PhoneIcon
-                fontSize="large"
-                style={{ marginRight: "8px", color: "rgb(54, 223, 104)" }}
-              />
-              +91 97691 49009
-            </div>
-            <div>
-              <a href="https://www.linkedin.com/in/darsh-parekh-991b0115a">
-                <LinkedInIcon fontSize="large" className="icon-in" />
-              </a>
-              <MailIcon fontSize="large" className="icon-mail" />
-            </div>
-          </div>
-          <img className="team-img" src={img3_2} alt="Person🍙"></img>
-        </div>
-        <div className="wrapper-2">
-          <div className="card-team">
-            Hemaangi Bhat
-            <div className="phone-num">
-              <PhoneIcon
-                fontSize="large"
-                style={{ marginRight: "8px", color: "rgb(54, 223, 104)" }}
-              />
-              +91 98698 56840
-            </div>
-            <div>
-              <a href="https://www.linkedin.com/in/hemaangi-bhat-6a433b1aa">
-                <LinkedInIcon fontSize="large" className="icon-in" />
-              </a>
-              <MailIcon fontSize="large" className="icon-mail" />
-            </div>
-          </div>
-          <img className="team-img" src={img3_3} alt="Person🍙"></img>
-        </div>
-        <div className="wrapper-2">
-          <div className="card-team">
-            Khushi Murpana
-            <div className="phone-num">
-              <PhoneIcon
-                fontSize="large"
-                style={{ marginRight: "8px", color: "rgb(54, 223, 104)" }}
-              />
-              +91 99207 71097
-            </div>
-            <div>
-              <a href="https://www.linkedin.com/in/kirti-kapai-2a09231a8">
-                <LinkedInIcon fontSize="large" className="icon-in" />
-              </a>
-              <MailIcon fontSize="large" className="icon-mail" />
-            </div>
-          </div>
-          <img className="team-img" src={img3_4} alt="Person🍙"></img>
-        </div>
-      </div>
-
-      <div className="rows-div">
-        <div className="wrapper-3">
-          <div className="card-team">
-            Kirti Kapai
-            <div className="phone-num">
-              <PhoneIcon
-                fontSize="large"
-                style={{ marginRight: "8px", color: "rgb(54, 223, 104)" }}
-              />
-              +91 99878 28333
-            </div>
-            <div>
-              <a href="https://www.linkedin.com/in/khushi-murpana-77bb3b1ab">
-                <LinkedInIcon fontSize="large" className="icon-in" />
-              </a>
-              <MailIcon fontSize="large" className="icon-mail" />
-            </div>
-          </div>
-          <img className="team-img" src={img4_1} alt="Person🍙"></img>
-        </div>
-        <div className="wrapper-3">
-          <div className="card-team">
-            Nikita Menghani
-            <div className="phone-num">
-              <PhoneIcon
-                fontSize="large"
-                style={{ marginRight: "8px", color: "rgb(54, 223, 104)" }}
-              />
-              +91 98335 80297
-            </div>
-            <div>
-              <a href="https://www.linkedin.com/in/nikita-menghani-240542198">
-                <LinkedInIcon fontSize="large" className="icon-in" />
-              </a>
-              <MailIcon fontSize="large" className="icon-mail" />
-            </div>
-          </div>
-          <img className="team-img" src={img4_2} alt="Person🍙"></img>
-        </div>
-        <div className="wrapper-3">
-          <div className="card-team">
-            Priyanshi Tenjani
-            <div className="phone-num">
-              <PhoneIcon
-                fontSize="large"
-                style={{ marginRight: "8px", color: "rgb(54, 223, 104)" }}
-              />
-              +91 98338 61310
-            </div>
-            <div>
-              <a href="https://www.linkedin.com/in/priyanshi-tejnani-78664a1a5">
-                <LinkedInIcon fontSize="large" className="icon-in" />
-              </a>
-              <MailIcon fontSize="large" className="icon-mail" />
-            </div>
-          </div>
-          <img className="team-img" src={img4_3} alt="Person🍙"></img>
+          <img className="team-img" src={img5_1} alt="Person🍙"></img>
         </div>
         <div className="wrapper-3">
           <div className="card-team">
@@ -288,44 +212,62 @@ function OurTeam() {
       </div>
 
       <div className="rows-div">
-        <div className="wrapper-4">
+        <div className="wrapper-2">
           <div className="card-team">
-            Shubham Lalwani
+            Hemaangi Bhat
             <div className="phone-num">
               <PhoneIcon
                 fontSize="large"
                 style={{ marginRight: "8px", color: "rgb(54, 223, 104)" }}
               />
-              +91 77971 30405
+              +91 98698 56840
             </div>
             <div>
-              <a href="https://www.linkedin.com/in/shubham-lalwani-26812a1b6">
+              <a href="https://www.linkedin.com/in/hemaangi-bhat-6a433b1aa">
                 <LinkedInIcon fontSize="large" className="icon-in" />
               </a>
               <MailIcon fontSize="large" className="icon-mail" />
             </div>
           </div>
-          <img className="team-img" src={img5_1} alt="Person🍙"></img>
+          <img className="team-img" src={img3_3} alt="Person🍙"></img>
         </div>
-        <div className="wrapper-4">
+        <div className="wrapper-2">
           <div className="card-team">
-            {" "}
-            Shubham Lalwani
+            Adit Shahani
             <div className="phone-num">
               <PhoneIcon
                 fontSize="large"
                 style={{ marginRight: "8px", color: "rgb(54, 223, 104)" }}
               />
-              +91 77971 30405
+              +91 89494 77378
             </div>
             <div>
-              <a href="https://www.linkedin.com/in/shubham-lalwani-26812a1b6">
+              <a href="https://www.linkedin.com/in/adit-shahani-344605209">
                 <LinkedInIcon fontSize="large" className="icon-in" />
               </a>
               <MailIcon fontSize="large" className="icon-mail" />
             </div>
           </div>
-          <img className="team-img" src={img5_2} alt="Person🍙"></img>
+          <img className="team-img" src={img3_1} alt="Person🍙"></img>
+        </div>
+        <div className="wrapper-3">
+          <div className="card-team">
+            Nikita Menghani
+            <div className="phone-num">
+              <PhoneIcon
+                fontSize="large"
+                style={{ marginRight: "8px", color: "rgb(54, 223, 104)" }}
+              />
+              +91 98335 80297
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/nikita-menghani-240542198">
+                <LinkedInIcon fontSize="large" className="icon-in" />
+              </a>
+              <MailIcon fontSize="large" className="icon-mail" />
+            </div>
+          </div>
+          <img className="team-img" src={img4_2} alt="Person🍙"></img>
         </div>
         <div className="wrapper-4">
           <div className="card-team">
@@ -346,24 +288,65 @@ function OurTeam() {
           </div>
           <img className="team-img" src={img5_3} alt="Person🍙"></img>
         </div>
-        <div className="wrapper-4">
+      </div>
+
+      <div className="rows-div">
+        <div className="wrapper-3">
           <div className="card-team">
-            Vandana Hemdev
+            Kirti Kapai
             <div className="phone-num">
               <PhoneIcon
                 fontSize="large"
                 style={{ marginRight: "8px", color: "rgb(54, 223, 104)" }}
               />
-              +91 83697 38660
+              +91 99878 28333
             </div>
             <div>
-              <a href="https://www.linkedin.com/in/vandanahemdev">
+              <a href="https://www.linkedin.com/in/khushi-murpana-77bb3b1ab">
                 <LinkedInIcon fontSize="large" className="icon-in" />
               </a>
               <MailIcon fontSize="large" className="icon-mail" />
             </div>
           </div>
-          <img className="team-img" src={img5_4} alt="Person🍙"></img>
+          <img className="team-img" src={img4_1} alt="Person🍙"></img>
+        </div>
+        <div className="wrapper">
+          <div className="card-team">
+            Arnav Dubey
+            <div className="phone-num">
+              <PhoneIcon
+                fontSize="large"
+                style={{ marginRight: "8px", color: "rgb(54, 223, 104)" }}
+              />
+              +91 70142 41608
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/arnav-dubey-5491aa101">
+                <LinkedInIcon fontSize="large" className="icon-in" />
+              </a>
+              <MailIcon fontSize="large" className="icon-mail" />
+            </div>
+          </div>
+          <img className="team-img" src={img2_4} alt="Person🍙"></img>
+        </div>
+        <div className="wrapper-2">
+          <div className="card-team">
+            Darsh Parekh
+            <div className="phone-num">
+              <PhoneIcon
+                fontSize="large"
+                style={{ marginRight: "8px", color: "rgb(54, 223, 104)" }}
+              />
+              +91 97691 49009
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/darsh-parekh-991b0115a">
+                <LinkedInIcon fontSize="large" className="icon-in" />
+              </a>
+              <MailIcon fontSize="large" className="icon-mail" />
+            </div>
+          </div>
+          <img className="team-img" src={img3_2} alt="Person🍙"></img>
         </div>
       </div>
 

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import firebase from "firebase/app";
 import "./Fundamentals.css";
+import img1 from "./Fundamental Pre/1.png";
+import img2 from "./Fundamental Pre/2.png";
 
 function Fundamentals(props) {
   var database = firebase.database().ref();
@@ -70,31 +72,34 @@ function Fundamentals(props) {
 
   return (
     <div className="main-container1">
-      <h1 className="event-title">Fundamentals</h1>
+      <div className="main-card">
+        <img src={img1} alt="lander" className="img-box-fund" />
+        <img src={img2} alt="lander" className="img-box-fund" />
 
-      <h2 className="loggedIn">
-        You are logged in as <b>{localStorage.getItem("email").toString()}</b>
-      </h2>
-      <div className="btns">
-        <button className="slideout" onClick={logOutHandler}>
-          Log Out
-        </button>
-        <button className="slidecont" onClick={pushHandler}>
-          Continue
-        </button>
-        {isAdmin ? (
-          <button
-            className="slidehome1"
-            onClick={() => {
-              props.history.push({
-                pathname: "/admin",
-                state: { isAdmin: true },
-              });
-            }}
-          >
-            Admin
+        <h3 className="loggedIn">
+          You are logged in as <b>{localStorage.getItem("email").toString()}</b>
+        </h3>
+        <div className="btns">
+          <button className="slideout" onClick={logOutHandler}>
+            Log Out
           </button>
-        ) : null}
+          <button className="slidecont" onClick={pushHandler}>
+            Continue
+          </button>
+          {isAdmin ? (
+            <button
+              className="slidehome1"
+              onClick={() => {
+                props.history.push({
+                  pathname: "/admin",
+                  state: { isAdmin: true },
+                });
+              }}
+            >
+              Admin
+            </button>
+          ) : null}
+        </div>
       </div>
     </div>
   );

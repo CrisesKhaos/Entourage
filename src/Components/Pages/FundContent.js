@@ -35,7 +35,7 @@ function FundContent(props) {
   const ansList = [
     "londonschoolofeconomics",
     "internationalstudentvisaadviceteam",
-    "bhandhanbank",
+    "bandhanbank",
     "sidneywebbhouse",
     "matic",
     "twozerozeroeighttwozerotwozero",
@@ -46,7 +46,7 @@ function FundContent(props) {
     "sovereigngoldbond",
     "nationalinstituteofinformationtechnology",
     "bmwtwotwozerodmsport",
-    "zeropointfour",
+    "riskhaitohishqhai",
   ];
   var database = firebase.database().ref();
 
@@ -110,7 +110,6 @@ function FundContent(props) {
           <div className="bruh">
             <img src={img15} alt="Image" className="img-box-fund" />
             <img src={img16} alt="Image" className="img-box-fund" />
-            <img src={img17} alt="Image" className="img-box-fund" />
           </div>
         );
       case 9:
@@ -144,7 +143,6 @@ function FundContent(props) {
         return (
           <div className="bruh">
             <img src={img25} alt="Image" className="img-box-fund" />
-            <img src={img26} alt="Image" className="img-box-fund" />
           </div>
         );
       case 14:
@@ -154,7 +152,7 @@ function FundContent(props) {
             <img
               src="https://media.discordapp.net/attachments/531108594943524866/860802197535981568/Bo.png?width=340&height=675"
               alt="Image"
-              className="img-box-fund"
+              className="bo-chan"
             />
           </>
         );
