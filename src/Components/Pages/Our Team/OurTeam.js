@@ -27,7 +27,7 @@ function OurTeam() {
   return (
     <div className="main-cont-team">
       <div className="rows-div">
-        <div>
+        <div className="wrapper">
           <div className="card-team">
             Saiyam Sanghi
             <div className="phone-num">

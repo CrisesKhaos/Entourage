@@ -1,22 +1,16 @@
 .main-cont-home {
   overflow: hidden;
-  margin : 0px;
+  margin: 0px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   display: flex;
-  align-items:center;
-  justify-content:center;
+  align-items: center;
+  justify-content: center;
   height: 90vh;
 }
 
-.title {
-  color: aliceblue;
-  font-size: 5rem;
-}
-
 .slogan {
- 
   color: aliceblue;
   font-size: 2rem;
 }
@@ -49,10 +43,28 @@
 }
 
 .title-cont {
-  margin:0px;
+  margin: 0px;
   justify-content: center;
   align-items: center;
-  margin : 0px;
+  margin: 0px;
   width: 90vw;
   display: flex;
+}
+.title {
+  color: aliceblue;
+  font-size: 5rem;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 30px;
+  }
+  .slogan {
+    font-size: 20px;
+    margin: 5px;
+  }
+  .socials {
+    margin: 5px;
+    font-size: 30px;
+  }
 }

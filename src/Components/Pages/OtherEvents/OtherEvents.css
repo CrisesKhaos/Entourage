@@ -24,11 +24,41 @@
 }
 .main-cont-other {
   width: 100vw;
-  height: 86vh;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   align-self: center;
   padding: 0px;
+}
+@media (max-width: 1300px) {
+  .main-grid {
+    margin-top: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .grid-img {
+    width: 33vw;
+    height: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .main-grid {
+    margin-top: 15px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-img {
+    width: 50vw;
+    height: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .main-grid {
+    margin-top: 15px;
+    grid-template-columns: 1fr;
+  }
+  .grid-img {
+    width: 100vw;
+    height: 100%;
+  }
 }

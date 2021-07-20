@@ -1,9 +1,9 @@
 .card {
+  width: fit-content;
   color: white;
   background-color: #141414;
-  margin-left: 18vw;
-  margin-right: 18vw;
-  padding: 5vw;
+  margin-bottom: 30px;
+  padding: 3vw;
   border-radius: 10px;
   flex-direction: column;
 }

@@ -4,7 +4,6 @@ import "./Fundamentals.css";
 
 function Fundamentals(props) {
   var database = firebase.database().ref();
-  const [data, setdata] = useState([]);
   const [isAdmin, setisAdmin] = useState(false);
   useEffect(() => {
     if (localStorage.getItem("loggedIn") !== "true") {
@@ -20,10 +19,6 @@ function Fundamentals(props) {
           console.log(snapshot.val());
         }
       });
-    // database.orderByChild("ques_fund").on("child_added", (snapshot) => {
-    //   setdata(data.push(snapshot.val()));
-    //   console.log(data);
-    // });
   }, []);
 
   const pushHandler = (e) => {
@@ -80,7 +75,7 @@ function Fundamentals(props) {
       <h2 className="loggedIn">
         You are logged in as <b>{localStorage.getItem("email").toString()}</b>
       </h2>
-      <div>
+      <div className="btns">
         <button className="slideout" onClick={logOutHandler}>
           Log Out
         </button>

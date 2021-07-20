@@ -48,3 +48,27 @@
   box-shadow: 0 0.5em 0.5em -0.4em #7bd43b;
   transform: translateY(-0.25em);
 }
+.btns {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  .event-title {
+    font-size: 35px;
+  }
+  .loggedIn {
+    font-size: 18px;
+  }
+  .slidecont {
+    font-size: 12px;
+  }
+  .slideout {
+    font-size: 12px;
+  }
+  .slidehome1 {
+    font-size: 12px;
+  }
+  .btns {
+    flex-direction: column;
+  }
+} ;

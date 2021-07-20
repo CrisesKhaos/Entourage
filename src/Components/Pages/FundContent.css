@@ -4,8 +4,8 @@
   justify-content: center;
   flex-direction: column;
   width: fit-content;
+  height: fit-content;
   padding: 5vw;
-  margin: 8vw;
   margin-top: 10px;
   background-color: #242526;
   color: white;
@@ -16,10 +16,12 @@
 .main-cont-fund {
   height: fit-content;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   align-self: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 .cont {
@@ -29,6 +31,7 @@
   flex-direction: row;
 }
 .field1 {
+  position: relative;
   margin: 0.5vw;
   margin-left: 0;
   margin: 0;
@@ -93,7 +96,7 @@
 }
 
 .img-box-fund {
-  width:50vw;
+  width: 50vw;
   margin: 20px;
 }
 .img-box-fund-alt {
@@ -112,4 +115,28 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+}
+
+@media (max-width: 500px) {
+  .main-card {
+    padding: 10px;
+    width: fit-content;
+    margin: 5px;
+  }
+  .img-box-fund {
+    width: 90%;
+  }
+  .field1 {
+    font-size: 18px;
+    margin-left: 15px;
+  }
+  .slidecont-alt {
+    font-size: 15px;
+    margin: 5px;
+  }
+  .slidehome1 {
+    font-size: 15px;
+    margin: 5px;
+    position: relative;
+  }
 }

@@ -181,6 +181,7 @@ function FundContent(props) {
     setcurrentAns(e.target.value.toString().toLowerCase().trim());
     console.log(currentAns);
   };
+
   return (
     <div className="main-cont-fund">
       <div className="main-card">

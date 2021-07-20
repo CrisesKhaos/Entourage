@@ -1,24 +1,22 @@
 import React, { useState, useEffect } from "react";
 import { Redirect } from "react-router-dom";
 import "./BoxContent.css";
-import img1_2 from "./BoxImg/Box1_2.PNG";
-import img1_1 from "./BoxImg/Box1_1.PNG";
-import img2_2 from "./BoxImg/Box2_2.PNG";
-import img2_1 from "./BoxImg/Box2_1.PNG";
-import img3 from "./BoxImg/Box3.PNG";
-import img4 from "./BoxImg/Box4.png";
-//box 5 index so no - 6
-import img5_1 from "./BoxImg/Box5_1.jpeg";
-import img5_2 from "./BoxImg/Box5_2.jpeg";
-import img5_3 from "./BoxImg/Box5_3.jpeg";
-import img5_4 from "./BoxImg/Box5_4.jpeg";
-import img5_5 from "./BoxImg/Box5_5.jpeg";
-//box 6 index so no - 7
-import img6_1 from "./BoxImg/Box6_1.PNG";
-import img6_2 from "./BoxImg/Box6_2.PNG";
-import img6_3 from "./BoxImg/Box6_3.PNG";
-import img6_4 from "./BoxImg/Box6_4.PNG";
-import img6_5 from "./BoxImg/Box6_5.PNG";
+import img2_1 from "./BoxImg/Box1_1.jpg";
+import img2_2 from "./BoxImg/Box1_2.jpg";
+import img3 from "./BoxImg/Box3.jpg";
+import img4 from "./BoxImg/Box4.jpg";
+import img5_1 from "./BoxImg/Box5_1.PNG";
+import img5_2 from "./BoxImg/Box5_2.PNG";
+import img6_1 from "./BoxImg/Box6_1.png";
+import img6_2 from "./BoxImg/Box6_2.png";
+import img6_3 from "./BoxImg/Box6_3.png";
+import img6_4 from "./BoxImg/Box6_4.png";
+import img6_5 from "./BoxImg/Box6_5.png";
+import img7_1 from "./BoxImg/Box7_1.png";
+import img7_2 from "./BoxImg/Box7_2.png";
+import img7_3 from "./BoxImg/Box7_3.png";
+import img7_4 from "./BoxImg/Box7_4.png";
+import img7_5 from "./BoxImg/Box7_5.png";
 import Popup from "../Popup/Popup";
 
 function BoxContent(props) {
@@ -188,47 +186,36 @@ function BoxContent(props) {
         return (
           <div className="img-container">
             <h1>Financial Statements of the Company</h1>
-            <img className="img-box" src={img1_1} />
-            <img src={img1_2} />
+            <img className="img-box" src={img2_1} />
+            <img src={img2_2} />
           </div>
         );
       case 2:
         return (
           <div className="img-container">
             <h1>Competitors Statements</h1>
-            <img className="img-box" src={img2_1} />
-            <img src={img2_2} />
+            <img className="img-box" src={img3} />
           </div>
         );
       case 3:
         return (
           <div className="img-container">
             <h1>Purchase List</h1>
-            <img className="img-box-alt" src={img3} />
+            <img className="img-box-alt" src={img4} />
           </div>
         );
       case 4:
         return (
           <div className="img-container">
             <h1>Email</h1>
-            <img className="img-box-alt" src={img4} />
+            <img className="img-box-alt" src={img5_1} />
+            <img className="img-box-alt" src={img5_2} />
           </div>
         );
       case 5:
         return (
           <div className="img-container">
             <h1>Voucher</h1>
-            <img className="img-box-alt" src={img5_1} />
-            <img className="img-box-alt" src={img5_2} />
-            <img className="img-box-alt" src={img5_3} />
-            <img className="img-box-alt" src={img5_4} />
-            <img className="img-box-alt" src={img5_5} />
-          </div>
-        );
-      case 6:
-        return (
-          <div className="img-container">
-            <h1>Delivery Challan</h1>
             <img className="img-box-alt" src={img6_1} />
             <img className="img-box-alt" src={img6_2} />
             <img className="img-box-alt" src={img6_3} />
@@ -236,12 +223,23 @@ function BoxContent(props) {
             <img className="img-box-alt" src={img6_5} />
           </div>
         );
+      case 6:
+        return (
+          <div className="img-container">
+            <h1>Delivery Challan</h1>
+            <img className="img-box-alt" src={img7_1} />
+            <img className="img-box-alt" src={img7_2} />
+            <img className="img-box-alt" src={img7_3} />
+            <img className="img-box-alt" src={img7_4} />
+            <img className="img-box-alt" src={img7_5} />
+          </div>
+        );
     }
   }
 
   if (!auth)
     return (
-      <>
+      <div className="main-cont-fund">
         <Popup
           pass={true}
           onClick={setpopupOpen}
@@ -302,7 +300,7 @@ function BoxContent(props) {
         >
           Home
         </button>
-      </>
+      </div>
     );
   else
     return (
