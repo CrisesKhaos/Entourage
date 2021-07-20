@@ -90,3 +90,55 @@
   box-shadow: 0 0.5em 0.5em -0.4em #f5f0ed;
   transform: translateY(-0.25em);
 }
+
+.btns {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-div-fund {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .card {
+    padding: 10px;
+    width: fit-content;
+    margin: 5px;
+  }
+  .img-box {
+    width: 90vw;
+  }
+  .img-box-alt {
+    width: 90vw;
+  }
+  .slidebck {
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    position: relative;
+    font-size: 15px;
+    margin: 5px;
+  }
+  .slidehome {
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    position: relative;
+    font-size: 15px;
+    margin: 5px;
+  }
+  .slidenext {
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    position: relative;
+    font-size: 15px;
+    margin: 5px;
+  }
+}

@@ -21,8 +21,8 @@ import HamDropdown from "./Components/Navbar/HamDropdown";
 
 ReactDOM.render(
   <Router>
-    <div id="particles-js">
-      <ParticleBackround className="bg" />
+    <div className="bg-main">
+      <ParticleBackround />
     </div>
     <Navbar className="nav" />
     <Switch>

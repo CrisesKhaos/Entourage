@@ -55,9 +55,17 @@
   font-size: 5rem;
 }
 
+.img-logo {
+  width: 100px;
+  height: 100px;
+}
 @media (max-width: 600px) {
   .title {
-    font-size: 30px;
+    font-size: 40px;
+  }
+  .img-logo {
+    width: 65px;
+    height: 65px;
   }
   .slogan {
     font-size: 20px;

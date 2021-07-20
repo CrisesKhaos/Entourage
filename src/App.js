@@ -20,7 +20,7 @@ function App(props) {
   return (
     <div className="main-cont-home">
       <div className="title-cont">
-        <img src={Icon} width="100px" height="100px" />
+        <img src={Icon} className="img-logo" />
         <div className="title">-ntourage` 21 </div>
       </div>
       <h className="slogan">Survive to Revive</h>

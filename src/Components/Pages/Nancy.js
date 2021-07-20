@@ -19,17 +19,19 @@ function Nancy(props) {
     return (
       <div className="x">
         <Popup open={pass} onClick={setpass} redirect={setredirect} />
-        {Content.map((item, index) => {
-          return (
-            <div
-              key={index}
-              className="box"
-              onClick={() => clickHandler(index)}
-            >
-              {item.title}
-            </div>
-          );
-        })}
+        <div className="grid-drew">
+          {Content.map((item, index) => {
+            return (
+              <div
+                key={index}
+                className="box"
+                onClick={() => clickHandler(index)}
+              >
+                {item.title}
+              </div>
+            );
+          })}
+        </div>
       </div>
     );
   else

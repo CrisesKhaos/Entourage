@@ -11,7 +11,22 @@
   font-size: 2rem;
 }
 
+@media (max-width: 500px) {
+  .modal {
+    width: 90vw;
+    padding: 15px;
+    font-size: 30px;
+  }
+  .field {
+    width: 88vw;
+  }
+  .slide {
+    font-size: 15px;
+  }
+}
 .modal-overlay {
+  align-items: center;
+  justify-content: center;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -40,4 +55,3 @@
   font-size: 1rem;
   color: #ff7f82;
 }
-
