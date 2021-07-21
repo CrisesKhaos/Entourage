@@ -151,8 +151,9 @@ function FundContent(props) {
             <h1>Ayy you did it !!!</h1>
             <img
               src="https://media.discordapp.net/attachments/531108594943524866/860802197535981568/Bo.png?width=340&height=675"
-              alt="Image"
-              className="bo-chan"
+              alt="bo-chan"
+              width="200px"
+              height="400px"
             />
           </>
         );

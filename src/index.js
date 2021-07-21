@@ -18,6 +18,7 @@ import Admin from "./Components/Pages/Admin/Admin";
 import OtherEvents from "./Components/Pages/OtherEvents/OtherEvents";
 import OurTeam from "./Components/Pages/Our Team/OurTeam";
 import HamDropdown from "./Components/Navbar/HamDropdown";
+import OtherEventsCont from "./Components/Pages/Other Events Cont/OtherEventsCont";
 
 ReactDOM.render(
   <Router>
@@ -39,6 +40,7 @@ ReactDOM.render(
       <Route path="/other-events" exact component={OtherEvents} />
       <Route path="/our-team" exact component={OurTeam} />
       <Route path="/drpdwn" exact component={HamDropdown} />
+      <Route path="/other-events-cont" exact component={OtherEventsCont} />
     </Switch>
   </Router>,
 

@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: 25vw 25vw 25vw 25vw;
   grid-template-rows: 40vh 40vh;
+  margin-top: 30px;
 }
 
 .main-grid-alt {
@@ -54,6 +55,7 @@
 }
 @media (max-width: 600px) {
   .main-grid {
+    height: fit-content;
     margin-top: 15px;
     grid-template-columns: 1fr;
     grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh;

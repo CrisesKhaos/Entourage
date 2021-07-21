@@ -61,7 +61,7 @@
 }
 @media (max-width: 600px) {
   .title {
-    font-size: 40px;
+    font-size: 43px;
   }
   .img-logo {
     width: 65px;
@@ -73,6 +73,6 @@
   }
   .socials {
     margin: 10px;
-    font-size: 50px;
+    font-size: 40px;
   }
 }

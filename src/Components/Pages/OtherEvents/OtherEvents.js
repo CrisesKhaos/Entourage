@@ -11,19 +11,81 @@ import img8 from "../OtherEventsImg/8.png";
 import img9 from "../OtherEventsImg/9.png";
 import img10 from "../OtherEventsImg/10.png";
 
-function OtherEvents() {
+function OtherEvents(props) {
+  const pushHandler = (x) => {
+    props.history.push({
+      pathname: "/other-events-cont",
+      state: { index: x },
+    });
+  };
   return (
     <div className="main-cont-other">
       <div>
         <div className="main-grid">
-          <img src={img1} alt="Event" className="grid-img" />
-          <img src={img2} alt="Event" className="grid-img" />
-          <img src={img3} alt="Event" className="grid-img" />
-          <img src={img4} alt="Event" className="grid-img" />
-          <img src={img5} alt="Event" className="grid-img" />
-          <img src={img6} alt="Event" className="grid-img" />
-          <img src={img9} alt="Event" className="grid-img" />
-          <img src={img10} alt="Event" className="grid-img" />
+          <img
+            src={img1}
+            alt="Event"
+            className="grid-img"
+            onClick={() => {
+              pushHandler(0);
+            }}
+          />
+          <img
+            src={img2}
+            alt="Event"
+            className="grid-img"
+            onClick={() => {
+              pushHandler(1);
+            }}
+          />
+          <img
+            src={img3}
+            alt="Event"
+            className="grid-img"
+            onClick={() => {
+              pushHandler(2);
+            }}
+          />
+          <img
+            src={img4}
+            alt="Event"
+            className="grid-img"
+            onClick={() => {
+              pushHandler(3);
+            }}
+          />
+          <img
+            src={img5}
+            alt="Event"
+            className="grid-img"
+            onClick={() => {
+              pushHandler(4);
+            }}
+          />
+          <img
+            src={img6}
+            alt="Event"
+            className="grid-img"
+            onClick={() => {
+              pushHandler(5);
+            }}
+          />
+          <img
+            src={img9}
+            alt="Event"
+            className="grid-img"
+            onClick={() => {
+              pushHandler(6);
+            }}
+          />
+          <img
+            src={img10}
+            alt="Event"
+            className="grid-img"
+            onClick={() => {
+              pushHandler(7);
+            }}
+          />
         </div>
       </div>
     </div>
