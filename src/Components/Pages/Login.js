@@ -4,7 +4,6 @@ import firebase from "firebase/app";
 import "firebase/database";
 import firebaseConfig from "../../Config";
 import "./Login.css";
-import Navbar from "../Navbar/Navbar";
 import "../../index.css";
 function Login(props) {
   const [email, setemail] = useState("");

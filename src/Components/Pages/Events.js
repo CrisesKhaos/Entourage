@@ -4,7 +4,6 @@ import "./Events.css";
 import img1 from "../Pages/OtherEventsImg/7.png";
 import img2 from "../Pages/OtherEventsImg/8.png";
 import { Redirect } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Events(props) {
   const [login, setlogin] = useState(false);
   const [nancy, setnancy] = useState(false);

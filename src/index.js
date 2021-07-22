@@ -6,7 +6,6 @@ import Login from "./Components/Pages/Login";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Events from "./Components/Pages/Events";
 import Navbar from "./Components/Navbar/Navbar";
-import Particles from "react-particles-js";
 import ParticleBackround from "./Backround/ParticleBackround";
 import Schedule from "./Components/Pages/Schedule";
 import Nancy from "./Components/Pages/Nancy";

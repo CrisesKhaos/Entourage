@@ -13,7 +13,6 @@ import img4_2 from "../OurTeamImgs/4_2.png";
 import img4_3 from "../OurTeamImgs/4_3.png";
 import img4_4 from "../OurTeamImgs/4_4.png";
 import img5_1 from "../OurTeamImgs/5_1.png";
-import img5_2 from "../OurTeamImgs/5_2.png";
 import img5_3 from "../OurTeamImgs/5_3.png";
 import img5_4 from "../OurTeamImgs/5_4.png";
 import img6_1 from "../OurTeamImgs/6_1.png";
@@ -39,9 +38,17 @@ function OurTeam() {
             </div>
             <div>
               <a href="https://www.linkedin.com/in/saiyam-sanghvi-5613241b1">
-                <LinkedInIcon fontSize="large" className="icon-in" />
+                <LinkedInIcon
+                  fontSize="large"
+                  className="icon-in"
+                  aria-label="Lined-In"
+                />
               </a>
-              <MailIcon fontSize="large" className="icon-mail" />
+              <MailIcon
+                fontSize="large"
+                className="icon-mail"
+                aria-label="E-mail"
+              />
             </div>
           </div>
           <img className="team-img" src={img1} alt="Person🍙"></img>
@@ -63,9 +70,17 @@ function OurTeam() {
             </div>
             <div>
               <a href="https://www.linkedin.com/in/kirti-kapai-2a09231a8">
-                <LinkedInIcon fontSize="large" className="icon-in" />
+                <LinkedInIcon
+                  fontSize="large"
+                  className="icon-in"
+                  aria-label="Lined-In"
+                />
               </a>
-              <MailIcon fontSize="large" className="icon-mail" />
+              <MailIcon
+                fontSize="large"
+                className="icon-mail"
+                aria-label="E-mail"
+              />
             </div>
           </div>
           <img className="team-img" src={img3_4} alt="Person🍙"></img>
@@ -83,9 +98,17 @@ function OurTeam() {
             </div>
             <div>
               <a href="https://www.linkedin.com/in/priyanshi-tejnani-78664a1a5">
-                <LinkedInIcon fontSize="large" className="icon-in" />
+                <LinkedInIcon
+                  fontSize="large"
+                  className="icon-in"
+                  aria-label="Lined-In"
+                />
               </a>
-              <MailIcon fontSize="large" className="icon-mail" />
+              <MailIcon
+                fontSize="large"
+                className="icon-mail"
+                aria-label="E-mail"
+              />
             </div>
           </div>
           <img className="team-img" src={img4_3} alt="Person🍙"></img>
@@ -103,9 +126,17 @@ function OurTeam() {
             </div>
             <div>
               <a href="https://www.linkedin.com/in/prithvi-jain04">
-                <LinkedInIcon fontSize="large" className="icon-in" />
+                <LinkedInIcon
+                  fontSize="large"
+                  className="icon-in"
+                  aria-label="Lined-In"
+                />
               </a>
-              <MailIcon fontSize="large" className="icon-mail" />
+              <MailIcon
+                fontSize="large"
+                className="icon-mail"
+                aria-label="E-mail"
+              />
             </div>
           </div>
           <img className="team-img" src={img2_3} alt="Person🍙"></img>
@@ -123,9 +154,17 @@ function OurTeam() {
             </div>
             <div>
               <a href="https://www.linkedin.com/in/vandanahemdev">
-                <LinkedInIcon fontSize="large" className="icon-in" />
+                <LinkedInIcon
+                  fontSize="large"
+                  className="icon-in"
+                  aria-label="Lined-In"
+                />
               </a>
-              <MailIcon fontSize="large" className="icon-mail" />
+              <MailIcon
+                fontSize="large"
+                className="icon-mail"
+                aria-label="E-mail"
+              />
             </div>
           </div>
           <img className="team-img" src={img5_4} alt="Person🍙"></img>
@@ -145,9 +184,17 @@ function OurTeam() {
             </div>
             <div>
               <a href="https://www.linkedin.com/in/harsha-jalan-b53b8b1a0">
-                <LinkedInIcon fontSize="large" className="icon-in" />
+                <LinkedInIcon
+                  fontSize="large"
+                  className="icon-in"
+                  aria-label="Lined-In"
+                />
               </a>
-              <MailIcon fontSize="large" className="icon-mail" />
+              <MailIcon
+                fontSize="large"
+                className="icon-mail"
+                aria-label="E-mail"
+              />
             </div>
           </div>
           <img className="team-img" src={img2_1} alt="Person🍙"></img>
@@ -164,9 +211,17 @@ function OurTeam() {
             </div>
             <div>
               <a href="https://www.linkedin.com/in/richa-dsilva-6757291b4">
-                <LinkedInIcon fontSize="large" className="icon-in" />
+                <LinkedInIcon
+                  fontSize="large"
+                  className="icon-in"
+                  aria-label="Lined-In"
+                />
               </a>
-              <MailIcon fontSize="large" className="icon-mail" />
+              <MailIcon
+                fontSize="large"
+                className="icon-mail"
+                aria-label="E-mail"
+              />
             </div>
           </div>
           <img className="team-img" src={img2_2} alt="Person🍙"></img>
@@ -183,9 +238,17 @@ function OurTeam() {
             </div>
             <div>
               <a href="https://www.linkedin.com/in/shubham-lalwani-26812a1b6">
-                <LinkedInIcon fontSize="large" className="icon-in" />
+                <LinkedInIcon
+                  fontSize="large"
+                  className="icon-in"
+                  aria-label="Lined-In"
+                />
               </a>
-              <MailIcon fontSize="large" className="icon-mail" />
+              <MailIcon
+                fontSize="large"
+                className="icon-mail"
+                aria-label="E-mail"
+              />
             </div>
           </div>
           <img className="team-img" src={img5_1} alt="Person🍙"></img>
@@ -202,9 +265,17 @@ function OurTeam() {
             </div>
             <div>
               <a href="https://www.linkedin.com/in/ritvik-devnani-9a9792197">
-                <LinkedInIcon fontSize="large" className="icon-in" />
+                <LinkedInIcon
+                  fontSize="large"
+                  className="icon-in"
+                  aria-label="Lined-In"
+                />
               </a>
-              <MailIcon fontSize="large" className="icon-mail" />
+              <MailIcon
+                fontSize="large"
+                className="icon-mail"
+                aria-label="E-mail"
+              />
             </div>
           </div>
           <img className="team-img" src={img4_4} alt="Person🍙"></img>
@@ -224,9 +295,17 @@ function OurTeam() {
             </div>
             <div>
               <a href="https://www.linkedin.com/in/hemaangi-bhat-6a433b1aa">
-                <LinkedInIcon fontSize="large" className="icon-in" />
+                <LinkedInIcon
+                  fontSize="large"
+                  className="icon-in"
+                  aria-label="Lined-In"
+                />
               </a>
-              <MailIcon fontSize="large" className="icon-mail" />
+              <MailIcon
+                fontSize="large"
+                className="icon-mail"
+                aria-label="E-mail"
+              />
             </div>
           </div>
           <img className="team-img" src={img3_3} alt="Person🍙"></img>
@@ -243,9 +322,17 @@ function OurTeam() {
             </div>
             <div>
               <a href="https://www.linkedin.com/in/adit-shahani-344605209">
-                <LinkedInIcon fontSize="large" className="icon-in" />
+                <LinkedInIcon
+                  fontSize="large"
+                  className="icon-in"
+                  aria-label="Lined-In"
+                />
               </a>
-              <MailIcon fontSize="large" className="icon-mail" />
+              <MailIcon
+                fontSize="large"
+                className="icon-mail"
+                aria-label="E-mail"
+              />
             </div>
           </div>
           <img className="team-img" src={img3_1} alt="Person🍙"></img>
@@ -262,9 +349,17 @@ function OurTeam() {
             </div>
             <div>
               <a href="https://www.linkedin.com/in/nikita-menghani-240542198">
-                <LinkedInIcon fontSize="large" className="icon-in" />
+                <LinkedInIcon
+                  fontSize="large"
+                  className="icon-in"
+                  aria-label="Lined-In"
+                />
               </a>
-              <MailIcon fontSize="large" className="icon-mail" />
+              <MailIcon
+                fontSize="large"
+                className="icon-mail"
+                aria-label="E-mail"
+              />
             </div>
           </div>
           <img className="team-img" src={img4_2} alt="Person🍙"></img>
@@ -281,9 +376,17 @@ function OurTeam() {
             </div>
             <div>
               <a href="https://www.linkedin.com/in/tanisha-a-a699a01aa">
-                <LinkedInIcon fontSize="large" className="icon-in" />
+                <LinkedInIcon
+                  fontSize="large"
+                  className="icon-in"
+                  aria-label="Lined-In"
+                />
               </a>
-              <MailIcon fontSize="large" className="icon-mail" />
+              <MailIcon
+                fontSize="large"
+                className="icon-mail"
+                aria-label="E-mail"
+              />
             </div>
           </div>
           <img className="team-img" src={img5_3} alt="Person🍙"></img>
@@ -303,9 +406,17 @@ function OurTeam() {
             </div>
             <div>
               <a href="https://www.linkedin.com/in/khushi-murpana-77bb3b1ab">
-                <LinkedInIcon fontSize="large" className="icon-in" />
+                <LinkedInIcon
+                  fontSize="large"
+                  className="icon-in"
+                  aria-label="Lined-In"
+                />
               </a>
-              <MailIcon fontSize="large" className="icon-mail" />
+              <MailIcon
+                fontSize="large"
+                className="icon-mail"
+                aria-label="E-mail"
+              />
             </div>
           </div>
           <img className="team-img" src={img4_1} alt="Person🍙"></img>
@@ -322,9 +433,17 @@ function OurTeam() {
             </div>
             <div>
               <a href="https://www.linkedin.com/in/arnav-dubey-5491aa101">
-                <LinkedInIcon fontSize="large" className="icon-in" />
+                <LinkedInIcon
+                  fontSize="large"
+                  className="icon-in"
+                  aria-label="Lined-In"
+                />
               </a>
-              <MailIcon fontSize="large" className="icon-mail" />
+              <MailIcon
+                fontSize="large"
+                className="icon-mail"
+                aria-label="E-mail"
+              />
             </div>
           </div>
           <img className="team-img" src={img2_4} alt="Person🍙"></img>
@@ -341,9 +460,17 @@ function OurTeam() {
             </div>
             <div>
               <a href="https://www.linkedin.com/in/darsh-parekh-991b0115a">
-                <LinkedInIcon fontSize="large" className="icon-in" />
+                <LinkedInIcon
+                  fontSize="large"
+                  className="icon-in"
+                  aria-label="Lined-In"
+                />
               </a>
-              <MailIcon fontSize="large" className="icon-mail" />
+              <MailIcon
+                fontSize="large"
+                className="icon-mail"
+                aria-label="E-mail"
+              />
             </div>
           </div>
           <img className="team-img" src={img3_2} alt="Person🍙"></img>
@@ -363,9 +490,17 @@ function OurTeam() {
             </div>
             <div>
               <a href="https://www.linkedin.com/in/sarthak-tyagi-b4a8151aa">
-                <LinkedInIcon fontSize="large" className="icon-in" />
+                <LinkedInIcon
+                  fontSize="large"
+                  className="icon-in"
+                  aria-label="Lined-In"
+                />
               </a>
-              <MailIcon fontSize="large" className="icon-mail" />
+              <MailIcon
+                fontSize="large"
+                className="icon-mail"
+                aria-label="E-mail"
+              />
             </div>
           </div>
           <img className="team-img" src={img6_1} alt="Person🍙"></img>
@@ -382,9 +517,17 @@ function OurTeam() {
             </div>
             <div>
               <a href="https://www.linkedin.com/in/vishwas-mordani-a738a51a7">
-                <LinkedInIcon fontSize="large" className="icon-in" />
+                <LinkedInIcon
+                  fontSize="large"
+                  className="icon-in"
+                  aria-label="Lined-In"
+                />
               </a>
-              <MailIcon fontSize="large" className="icon-mail" />
+              <MailIcon
+                fontSize="large"
+                className="icon-mail"
+                aria-label="E-mail"
+              />
             </div>
           </div>
           <img className="team-img" src={img6_2} alt="Person🍙"></img>

@@ -15,7 +15,6 @@ function Admin(props) {
 
   useEffect(() => {
     if (props.location.state.isAdmin) {
-      console.log(props.location.state.isAdmin);
       db.on("value", (snapshot) => {
         setdata(snapshot.val());
       });
@@ -42,7 +41,7 @@ function Admin(props) {
         </div>
         {Object.keys(data).map((key) => {
           return (
-            <div className="admin-div">
+            <div className="admin-div" key={key}>
               <div>{key}</div>
               <div>{data[key].name}</div>
               <div>{data[key].pass}</div>

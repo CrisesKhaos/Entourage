@@ -13,6 +13,8 @@ function OtherEventsCont(props) {
 
   function GetEvent(props1) {
     switch (props1.x) {
+      default:
+        return <div>Error 🤡 </div>;
       case 0:
         return (
           <div>

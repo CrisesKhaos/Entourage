@@ -6,8 +6,6 @@ import img3 from "../OtherEventsImg/3.png";
 import img4 from "../OtherEventsImg/4.png";
 import img5 from "../OtherEventsImg/5.png";
 import img6 from "../OtherEventsImg/6.png";
-import img7 from "../OtherEventsImg/7.png";
-import img8 from "../OtherEventsImg/8.png";
 import img9 from "../OtherEventsImg/9.png";
 import img10 from "../OtherEventsImg/10.png";
 

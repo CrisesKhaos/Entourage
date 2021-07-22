@@ -66,9 +66,7 @@
 }
 
 .wrong {
-  bottom: 50;
-  position: fixed;
-  font-size: 1.2vw;
+  font-size: 20px;
   color: #ff7f82;
 }
 
@@ -144,5 +142,8 @@
     font-size: 15px;
     margin: 5px;
     position: relative;
+  }
+  .wrong {
+    font-size: 15px;
   }
 }

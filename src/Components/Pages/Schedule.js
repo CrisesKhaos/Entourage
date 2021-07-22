@@ -10,7 +10,6 @@ function Schedule() {
   return (
     <div className="main-cont-fund">
       <div className="main-card">
-        <h2 style={{ color: "#ffffff" }}>Schedule</h2>
         <img alt="Schedule" src={img1} className="img-box-fund" />
         <img alt="Schedule" src={img2} className="img-box-fund" />
         <img alt="Schedule" src={img3} className="img-box-fund" />

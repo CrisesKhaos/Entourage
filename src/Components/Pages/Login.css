@@ -35,7 +35,7 @@
   font-size: 1.5rem;
   color: whitesmoke;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .wrong-log {
