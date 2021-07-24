@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import img2 from "./FundImg/2.png";
 import img3 from "./FundImg/3.png";
 import img4 from "./FundImg/4.png";
@@ -29,22 +29,20 @@ import "./FundContent.css";
 function FundContent(props) {
   const [currentAns, setcurrentAns] = useState("");
   const [error, seterror] = useState("");
-  const ansList = [
-    "londonschoolofeconomics",
-    "internationalstudentvisaadviceteam",
-    "bandhanbank",
-    "sidneywebbhouse",
-    "matic",
-    "twozerozeroeighttwozerotwozero",
-    "deutschebank",
-    "invertedheadandshoulder",
-    "onetwotwosixtwothreeonefour",
-    "ruleofseventwo",
-    "sovereigngoldbond",
-    "nationalinstituteofinformationtechnology",
-    "bmwtwotwozerodmsport",
-    "riskhaitohishqhai",
-  ];
+
+  const [answer, setanswer] = useState("");
+
+  useEffect(() => {
+    database
+      .child("answers")
+      .child(props.location.state.index)
+      .get()
+      .then((snapshot) => {
+        setanswer(snapshot.val());
+        console.log(snapshot.val());
+      });
+  }, [answer, props.location.state.index]);
+
   var database = firebase.database().ref();
 
   function SortQues(props1) {
@@ -253,7 +251,7 @@ function FundContent(props) {
 
   const submitHandler = () => {
     setcurrentAns("");
-    if (currentAns === ansList[props.location.state.index]) {
+    if (currentAns === answer) {
       database
         .child(localStorage.getItem("email"))
         .child("ques_fund")

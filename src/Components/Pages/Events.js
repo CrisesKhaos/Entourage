@@ -76,7 +76,7 @@ function Events(props) {
             props.history.push("/other-events");
           }}
         >
-          Other Events..
+          Other Events
         </div>
       </div>
     );

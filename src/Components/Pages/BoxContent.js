@@ -27,7 +27,6 @@ function BoxContent(props) {
     setauth(false);
     setnext(false);
   }, [auth]);
-  console.log(auth);
   function Sort(props1) {
     switch (props1.index) {
       default:
@@ -125,7 +124,6 @@ function BoxContent(props) {
                     props.location.state.index - 1 === 5
                   ) {
                     setpopupOpen(true);
-                    console.log("bruh");
                   } else
                     props.history.replace({
                       pathname: "/box-content",
@@ -146,7 +144,6 @@ function BoxContent(props) {
                     props.location.state.index + 1 === 5
                   ) {
                     setpopupOpen(true);
-                    console.log("bruh");
                   } else
                     props.history.replace({
                       pathname: "/box-content",

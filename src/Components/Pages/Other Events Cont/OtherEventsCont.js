@@ -9,8 +9,6 @@ import img6 from "./6.png";
 import img7 from "./7.png";
 
 function OtherEventsCont(props) {
-  console.log(props.location.state.index);
-
   function GetEvent(props1) {
     switch (props1.x) {
       default:

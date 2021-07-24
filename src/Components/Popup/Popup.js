@@ -10,7 +10,7 @@ function Popup(props) {
   };
 
   const submitHandler = (e) => {
-    if (code.toUpperCase() === "ASDF" || code.toUpperCase() === "ZXCV") {
+    if (code.toUpperCase() === "VBNM" || code.toUpperCase() === "ZXCV") {
       if (props.inScene) {
         props.setAuth(true);
         props.onClick(false);

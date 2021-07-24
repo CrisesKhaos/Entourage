@@ -6,7 +6,6 @@ import { ques } from "../ques";
 
 function Card(props) {
   const clickhandler = (to) => {
-    console.log(to);
     props.setquestionstate(to);
   };
   return (

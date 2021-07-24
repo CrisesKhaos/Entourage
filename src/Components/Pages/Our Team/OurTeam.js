@@ -28,7 +28,7 @@ function OurTeam() {
       <div className="rows-div">
         <div className="wrapper">
           <div className="card-team">
-            Saiyam Sanghi
+            Saiyam Sanghvi
             <div className="phone-num">
               <PhoneIcon
                 fontSize="large"
