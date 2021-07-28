@@ -10,18 +10,34 @@ function Popup(props) {
   };
 
   const submitHandler = (e) => {
-    if (code.toUpperCase() === "VBNM" || code.toUpperCase() === "ZXCV") {
-      if (props.inScene) {
-        props.setAuth(true);
-        props.onClick(false);
-        seterror("");
+    if (!props.inside) {
+      if (code.toUpperCase() === "VBNM") {
+        if (props.inScene) {
+          props.setAuth(true);
+          props.onClick(false);
+          seterror("");
+        } else {
+          props.onClick(false);
+          props.redirect(true);
+          seterror("");
+        }
       } else {
-        props.onClick(false);
-        props.redirect(true);
-        seterror("");
+        seterror("Please enter a valid code.");
       }
     } else {
-      seterror("Please enter a valid code.");
+      if (code.toUpperCase() === "FGHJ") {
+        if (props.inScene) {
+          props.setAuth(true);
+          props.onClick(false);
+          seterror("");
+        } else {
+          props.onClick(false);
+          props.redirect(true);
+          seterror("");
+        }
+      } else {
+        seterror("Please enter a valid code.");
+      }
     }
   };
 
@@ -40,6 +56,11 @@ function Popup(props) {
           {props.pass ? "Enter your password" : "Enter your code"}
           <input type="text" className="field" onChange={changeHandler}></input>
           <div className="wrong">{error}</div>
+          {props.inside ? (
+            <div className="xy">
+              Complete the given task to open this document.
+            </div>
+          ) : null}
           <button className="slide" onClick={submitHandler}>
             Submit
           </button>

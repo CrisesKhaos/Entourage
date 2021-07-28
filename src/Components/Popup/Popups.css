@@ -11,19 +11,6 @@
   font-size: 2rem;
 }
 
-@media (max-width: 500px) {
-  .modal {
-    width: 90vw;
-    padding: 15px;
-    font-size: 30px;
-  }
-  .field {
-    width: 88vw;
-  }
-  .slide {
-    font-size: 15px;
-  }
-}
 .modal-overlay {
   align-items: center;
   justify-content: center;
@@ -54,4 +41,24 @@
 .wrong {
   font-size: 1rem;
   color: #ff7f82;
+}
+
+.xy {
+  font-size: 20px;
+  margin: 10px;
+  margin-left: 0px;
+}
+
+@media (max-width: 500px) {
+  .modal {
+    width: 90vw;
+    padding: 15px;
+    font-size: 30px;
+  }
+  .field {
+    width: 88vw;
+  }
+  .slide {
+    font-size: 15px;
+  }
 }

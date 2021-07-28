@@ -18,7 +18,12 @@ function Nancy(props) {
   if (redirect === false)
     return (
       <div className="x">
-        <Popup open={pass} onClick={setpass} redirect={setredirect} />
+        <Popup
+          open={pass}
+          onClick={setpass}
+          redirect={setredirect}
+          inside={true}
+        />
         <div className="grid-drew">
           {Content.map((item, index) => {
             return (
