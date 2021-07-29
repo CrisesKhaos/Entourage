@@ -8,8 +8,10 @@ function Nancy(props) {
   const [pass, setpass] = useState(false);
   const [redirect, setredirect] = useState(false);
   const [to, setto] = useState();
+  const [inside, setinside] = useState(0);
   const clickHandler = (index) => {
     if (index === 4 || index === 5) {
+      setinside(index);
       setpass(true);
       setto(index);
     } else
@@ -22,7 +24,7 @@ function Nancy(props) {
           open={pass}
           onClick={setpass}
           redirect={setredirect}
-          inside={true}
+          inside={inside}
         />
         <div className="grid-drew">
           {Content.map((item, index) => {

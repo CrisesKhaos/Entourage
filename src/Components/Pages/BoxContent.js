@@ -107,6 +107,7 @@ function BoxContent(props) {
           open={popupOpen}
           inScene={true}
           setAuth={setauth}
+          inside={props.location.state.index + 1}
         />
         <div className="card">
           {<Sort index={props.location.state.index} />}
