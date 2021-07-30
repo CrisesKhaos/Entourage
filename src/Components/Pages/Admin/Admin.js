@@ -12,7 +12,7 @@ function Admin(props) {
   const [mail, setmail] = useState("");
   const [name, setname] = useState("");
   const [pass, setpass] = useState("");
-
+  const [leaderdata, setleaderdata] = useState([]);
   useEffect(() => {
     if (props.location.state.isAdmin) {
       db.on("value", (snapshot) => {
@@ -21,6 +21,14 @@ function Admin(props) {
     } else {
       <Redirect to="/" />;
     }
+  }, []);
+
+  useEffect(() => {
+    var x = 0;
+    db.orderByChild("ques_fund").once("child_added", (snapshot) => {
+      setleaderdata(leaderdata.push(snapshot.val()));
+    });
+    console.log(leaderdata);
   }, []);
 
   const submitHandler = () => {
