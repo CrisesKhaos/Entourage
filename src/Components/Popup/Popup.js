@@ -3,7 +3,6 @@ import "./Popups.css";
 import ReactDOM from "react-dom";
 
 function Popup(props) {
-  console.log(props.inside);
   const [code, setcode] = useState("");
   const [error, seterror] = useState("");
   const changeHandler = (e) => {

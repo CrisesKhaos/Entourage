@@ -23,6 +23,7 @@ function BoxContent(props) {
   const [popupOpen, setpopupOpen] = useState(false);
   const [auth, setauth] = useState(false);
   const [next, setnext] = useState(false);
+  const [popupIndex, setpopupIndex] = useState(0);
   useEffect(() => {
     setauth(false);
     setnext(false);
@@ -107,7 +108,7 @@ function BoxContent(props) {
           open={popupOpen}
           inScene={true}
           setAuth={setauth}
-          inside={props.location.state.index + 1}
+          inside={popupIndex}
         />
         <div className="card">
           {<Sort index={props.location.state.index} />}
@@ -118,12 +119,14 @@ function BoxContent(props) {
             <button
               className="slidebck"
               onClick={() => {
+                console.log(props.location.state.index - 1);
                 if (props.location.state.index !== 0) {
                   setnext(false);
                   if (
                     props.location.state.index - 1 === 4 ||
                     props.location.state.index - 1 === 5
                   ) {
+                    setpopupIndex(props.location.state.index - 1);
                     setpopupOpen(true);
                   } else
                     props.history.replace({
@@ -145,6 +148,7 @@ function BoxContent(props) {
                     props.location.state.index + 1 === 5
                   ) {
                     setpopupOpen(true);
+                    setpopupIndex(props.location.state.index + 1);
                   } else
                     props.history.replace({
                       pathname: "/box-content",
