@@ -29,7 +29,7 @@ function Login(props) {
 
   const submitHandler = (e) => {
     database
-      .child(email.toLowerCase())
+      .child(email)
       .get()
       .then((snapshot) => {
         if (snapshot.exists()) {
@@ -40,7 +40,7 @@ function Login(props) {
             } else {
               localStorage.setItem("loggedIn", true);
               localStorage.setItem("email", email);
-              database.child(email.toLowerCase()).child("loggedIn").set(true);
+              database.child(email).child("loggedIn").set(true);
               props.history.push({
                 pathname: "/fundamentals",
                 state: { auth: true },

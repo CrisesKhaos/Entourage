@@ -20,6 +20,9 @@ import img6_2 from "../OurTeamImgs/6_2.png";
 import MailIcon from "@material-ui/icons/Mail";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import PhoneIcon from "@material-ui/icons/Phone";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import GitHubIcon from "@material-ui/icons/GitHub";
 import "./OurTeam.css";
 
 function OurTeam() {
@@ -531,6 +534,36 @@ function OurTeam() {
             </div>
           </div>
           <img className="team-img" src={img6_2} alt="Person🍙"></img>
+        </div>
+      </div>
+
+      <div className="rows-div">
+        <div className="dev">
+          <div> Developed by -</div>
+          <div className="dev-name">Vedant Tewari</div>
+          <div>
+            <a href="https://www.instagram.com/_vedanttewari/">
+              <InstagramIcon
+                fontSize="large"
+                className="icon-in"
+                aria-label="Lined-In"
+              />
+            </a>
+            <a href="https://twitter.com/CrisesKhaos">
+              <TwitterIcon
+                fontSize="large"
+                className="icon-in"
+                aria-label="Lined-In"
+              />
+            </a>
+            <a href="https://github.com/CrisesKhaos">
+              <GitHubIcon
+                fontSize="large"
+                className="icon-in"
+                aria-label="Lined-In"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
